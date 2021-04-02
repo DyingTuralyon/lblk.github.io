@@ -3,17 +3,17 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
+title: 流放lblk的小岛
 subtitle: ''
 description: ''
-keywords:
-author: John Doe
-language: en
-timezone: ''
+keywords: 'ML,DL,RL,NLP,EEG,Security,Finance,Math'
+author: 车轮布
+language: zh-CN
+timezone: 'Asia/Shanghai'
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
+url: http://lblk.github.io
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -103,3 +103,16 @@ theme: landscape
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: ''
+gitment:
+  enable: true # 是否开启gitment评论系统
+  mint: true #
+  count: true # 是否显示评论数
+  lazy: true # 懒加载，设置为ture时需手动展开评论
+  cleanly: true # 是否隐藏'Powered by ...'
+  language: en # 语言，置空则随主题的语言
+  github_user: iamsea # Github用户名
+  github_repo: comment # 在Github新建一个仓库用于存放评论，这是仓库名
+  client_id: a6df579b14f7da8ed99c # 注册OAuth Application时生成
+  client_secret: 1f6568974d6f3ed28055d2243d05457f7e04cfd3 # 注册OAuth Application时生成
+  proxy_gateway: # Address of api proxy, See: https://github.com/aimingoo/intersect
+  redirect_protocol: # Protocol of redirect_uri with force_redirect_protocol when mint enabled
