@@ -75,33 +75,24 @@
     <article id="post-20200401" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2021/04/02/20200401/" class="article-date">
-  <time class="dt-published" datetime="2021-04-02T08:58:52.172Z" itemprop="datePublished">2021-04-02</time>
+  <time class="dt-published" datetime="2021-04-02T08:58:55.188Z" itemprop="datePublished">2021-04-02</time>
 </a>
     
   </div>
   <div class="article-inner">
     
     
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2021/04/02/20200401/">hexo+github page建站踩坑</a>
-    </h1>
-  
-
-      </header>
-    
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <p>整体上来说同<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/github-pages">hexo官方教程</a>所述没什么不同<br>但要注意：github已经将主代码分支名设置为main，所以：.travis.yml文件应该如下所示</p>
+        <hr>
+<h2 id="title-hexo-github-page建站踩坑"><a href="#title-hexo-github-page建站踩坑" class="headerlink" title="title:hexo+github page建站踩坑"></a>title:hexo+github page建站踩坑</h2><p>整体上来说同<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/github-pages">hexo官方教程</a>所述没什么不同<br>但要注意：github已经将主代码分支名设置为main，所以：.travis.yml文件应该如下所示</p>
 <figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">sudo:</span> <span class="literal">false</span></span><br><span class="line"><span class="attr">language:</span> <span class="string">node_js</span></span><br><span class="line"><span class="attr">node_js:</span></span><br><span class="line">  <span class="bullet">-</span> <span class="number">10</span> <span class="comment"># use nodejs v10 LTS</span></span><br><span class="line"><span class="attr">cache:</span> <span class="string">npm</span></span><br><span class="line"><span class="attr">branches:</span></span><br><span class="line">  <span class="attr">only:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">main</span> <span class="comment"># build master branch only</span></span><br><span class="line"><span class="attr">script:</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">hexo</span> <span class="string">generate</span> <span class="comment"># generate static files</span></span><br><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">provider:</span> <span class="string">pages</span></span><br><span class="line">  <span class="attr">skip-cleanup:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">github-token:</span> <span class="string">$GH_TOKEN</span></span><br><span class="line">  <span class="attr">keep-history:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">on:</span></span><br><span class="line">    <span class="attr">branch:</span> <span class="string">main</span></span><br><span class="line">  <span class="attr">local-dir:</span> <span class="string">public</span></span><br></pre></td></tr></table></figure>
 <p>即把其中的master替换为main</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://lblk.github.io/2021/04/02/20200401/" data-id="ckn02s1p90000z5no6b31ay56" data-title="hexo+github page建站踩坑" class="article-share-link">分享</a>
+      <a data-url="http://lblk.github.io/2021/04/02/20200401/" data-id="ckn02s3pz0000yzrr1rf5713u" data-title="" class="article-share-link">分享</a>
       
       
       
@@ -116,7 +107,7 @@
     <article id="post-hello-world-test" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2021/04/02/hello-world-test/" class="article-date">
-  <time class="dt-published" datetime="2021-04-02T08:58:52.172Z" itemprop="datePublished">2021-04-02</time>
+  <time class="dt-published" datetime="2021-04-02T08:58:55.176Z" itemprop="datePublished">2021-04-02</time>
 </a>
     
   </div>
@@ -141,7 +132,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://lblk.github.io/2021/04/02/hello-world-test/" data-id="ckn02s1pe0001z5no9qjmc8bz" data-title="Hello World" class="article-share-link">分享</a>
+      <a data-url="http://lblk.github.io/2021/04/02/hello-world-test/" data-id="ckn02s3q40001yzrr6ieo5jio" data-title="Hello World" class="article-share-link">分享</a>
       
       
       
@@ -156,7 +147,7 @@
     <article id="post-hello-world" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2021/04/02/hello-world/" class="article-date">
-  <time class="dt-published" datetime="2021-04-02T08:58:52.172Z" itemprop="datePublished">2021-04-02</time>
+  <time class="dt-published" datetime="2021-04-02T08:58:55.176Z" itemprop="datePublished">2021-04-02</time>
 </a>
     
   </div>
@@ -192,7 +183,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://lblk.github.io/2021/04/02/hello-world/" data-id="ckn02s1pg0002z5noci7yh8p9" data-title="Hello World" class="article-share-link">分享</a>
+      <a data-url="http://lblk.github.io/2021/04/02/hello-world/" data-id="ckn02s3q50002yzrrbva92sw3" data-title="Hello World" class="article-share-link">分享</a>
       
       
       
@@ -235,7 +226,7 @@
       <ul>
         
           <li>
-            <a href="/2021/04/02/20200401/">hexo+github page建站踩坑</a>
+            <a href="/2021/04/02/20200401/">(no title)</a>
           </li>
         
           <li>
