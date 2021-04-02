@@ -7,7 +7,7 @@ title: 流放lblk的小岛
 subtitle: ''
 description: ''
 keywords: 'ML,DL,RL,NLP,EEG,Security,Finance,Math'
-author: 车轮布
+author: 1642264706@qq.com
 language: zh-CN
 timezone: 'Asia/Shanghai'
 
@@ -110,7 +110,10 @@ gitment:
   lazy: true # 懒加载，设置为ture时需手动展开评论
   cleanly: false # 是否隐藏'Powered by ...'
   language:  # 语言，置空则随主题的语言
+  id: ''
+  owner: LBLK
   github_user: LBLK # Github用户名
+  repo: comment
   github_repo: comment # 在Github新建一个仓库用于存放评论，这是仓库名
   client_id: effeee706e4312ceba03 # 注册OAuth Application时生成
   client_secret: 25b21d1b745a75c4cd7ca2a1dcf9cc98de4c521f # 注册OAuth Application时生成
