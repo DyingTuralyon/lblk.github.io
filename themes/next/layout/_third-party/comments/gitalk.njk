@@ -1,6 +1,6 @@
 {%- if page.comments %}
 <link rel="stylesheet" href="{{ theme.vendors.gitalk_css }}">
-proxy: 'https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token'
+
 <script>
 NexT.utils.loadComments('.gitalk-container', () => {
   NexT.utils.getScript('{{ theme.vendors.gitalk_js }}', () => {
