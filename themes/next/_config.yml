@@ -616,8 +616,8 @@ gitalk:
   enable: true
   github_id: LBLK # GitHub repo owner
   repo: comment # Repository name to store issues
-  client_id: effeee706e4312ceba03 # GitHub Application Client ID
-  client_secret: 25b21d1b745a75c4cd7ca2a1dcf9cc98de4c521f # GitHub Application Client Secret
+  client_id: 9c021c5da0bed6b2f2d2 # GitHub Application Client ID
+  client_secret: 7d1eea834ad820fb3308c12939c21636985cb596 # GitHub Application Client Secret
   admin_user: LBLK # GitHub repo owner and collaborators, only these guys can initialize gitHub issues
   distraction_free_mode: true # Facebook-like distraction free mode
   # When the official proxy is not available, you can change it to your own proxy address
