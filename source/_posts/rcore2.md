@@ -78,5 +78,5 @@ $ rust-objdump target/riscv64imac-unknown-none-elf/debug/os -d --arch-name=riscv
 
 # 8.自己动手写println!()
 
-
+第一次为他人而非自己提供接口！
 
