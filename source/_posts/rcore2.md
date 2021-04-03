@@ -26,12 +26,57 @@ mathjax: true
 ## 	2.4 ABI
 
 # 3. 使用给定三元组（riscv64）编译项目为内核镜像
-
+```cmd
+$ cargo build --target riscv64imac-unknown-none-elf
+```
 ## 3.1 安装core
-
+```cmd
+$ rustup target add riscv64imac-unknown-none-elf
+```
 ## 3.2 配置目标三元组进入 #.cargo/config
-
-## 3.3安装objdump $\in$ biuntils工具集
+```cmd
+$ cargo install cargo-binutils
+$ rustup component add llvm-tools-preview
+```
+## 3.3安装「objdump、objcopy」 $\in$ biuntils工具集
 
 ## 3.4编译生成64位ELF文件
+```cmd
+$ cargo build --target riscv64imac-unknown-none-elf
+```
+## 3.5由ELF文件生成内核镜像
+```cmd
+$ rust-objcopy target/riscv64imac-unknown-none-elf/debug/os --strip-all -O binary target/riscv64imac-unknown-none-elf/debug/kernel.bin
+```
+
+# 4. 使用链接脚本
+
+## 4.1链接脚本的编写
+
+## 4.2链接脚本加入.cargo/config配置
+
+## 4.3跑起来
+```
+$ cargo build
+$ rust-objdump target/riscv64imac-unknown-none-elf/debug/os -h --arch-name=riscv64
+$ rust-objdump target/riscv64imac-unknown-none-elf/debug/os -d --arch-name=riscv64
+```
+
+# 5.重写程序入口
+
+## 5.1用汇编编写_start
+
+## 5.2用rust_main接管_start
+
+# 6.Qemu降临
+
+## 6.1 qemu_concept_Intro
+
+## 6.2 复杂的qemu-内核加载
+
+# 7.为open_SBI的使用而重构一切
+
+# 8.自己动手写println!()
+
+
 
