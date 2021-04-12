@@ -292,7 +292,7 @@ mjx-container[display="true"] + br {
       <span class="post-meta-item-text">发表于</span>
       
 
-      <time title="创建时间：2021-04-12 09:42:14 / 修改时间：15:10:28" itemprop="dateCreated datePublished" datetime="2021-04-12T09:42:14+08:00">2021-04-12</time>
+      <time title="创建时间：2021-04-12 09:42:14 / 修改时间：15:12:08" itemprop="dateCreated datePublished" datetime="2021-04-12T09:42:14+08:00">2021-04-12</time>
     </span>
 
   
@@ -361,7 +361,7 @@ mjx-container[display="true"] + br {
       <span class="post-meta-item-text">发表于</span>
       
 
-      <time title="创建时间：2021-04-12 09:35:20 / 修改时间：15:10:28" itemprop="dateCreated datePublished" datetime="2021-04-12T09:35:20+08:00">2021-04-12</time>
+      <time title="创建时间：2021-04-12 09:35:20 / 修改时间：15:12:08" itemprop="dateCreated datePublished" datetime="2021-04-12T09:35:20+08:00">2021-04-12</time>
     </span>
 
   
@@ -432,7 +432,7 @@ mjx-container[display="true"] + br {
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-04-12 15:10:28" itemprop="dateModified" datetime="2021-04-12T15:10:28+08:00">2021-04-12</time>
+        <time title="修改时间：2021-04-12 15:12:08" itemprop="dateModified" datetime="2021-04-12T15:12:08+08:00">2021-04-12</time>
       </span>
 
   
@@ -502,7 +502,7 @@ mjx-container[display="true"] + br {
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-04-12 15:10:28" itemprop="dateModified" datetime="2021-04-12T15:10:28+08:00">2021-04-12</time>
+        <time title="修改时间：2021-04-12 15:12:08" itemprop="dateModified" datetime="2021-04-12T15:12:08+08:00">2021-04-12</time>
       </span>
 
   
@@ -516,12 +516,44 @@ mjx-container[display="true"] + br {
     
     <div class="post-body" itemprop="articleBody">
           <p>内容取自<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1R7411v74a">【Python网络爬虫与信息提取】北京理工大学</a><br>博客原文<a href="https://lblk.github.io/2021/04/09/%E6%AF%95%E4%B8%9A%E5%AE%9E%E4%B9%A0/">blog</a></p>
-<h1 id="第一单元-request库"><a href="#第一单元-request库" class="headerlink" title="第一单元 request库"></a>第一单元 request库</h1><h2 id="1-1request库的七个方法"><a href="#1-1request库的七个方法" class="headerlink" title="1.1request库的七个方法"></a>1.1request库的七个方法</h2><p>增、删、改、查<br>put delete post get<br>|方法名|作用|</p>
+<h1 id="第一单元-request库"><a href="#第一单元-request库" class="headerlink" title="第一单元 request库"></a>第一单元 request库</h1><h2 id="1-1request库的七个方法"><a href="#1-1request库的七个方法" class="headerlink" title="1.1request库的七个方法"></a>1.1request库的七个方法</h2><p>增、删、改、查<br>put delete post get</p>
 <h3 id="requests-request"><a href="#requests-request" class="headerlink" title="requests.request()"></a>requests.request()</h3><p>基方法</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">xxx() = request(<span class="string">'xxx'</span>,url,params = params,**kwargs)</span><br></pre></td></tr></table></figure>
 <p>URL格式：<a href="https://host[:port][path]">https://host[:port][path]</a></p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#完整形式</span></span><br><span class="line">requests.get(url,params = <span class="literal">None</span>,**kwargs)</span><br><span class="line"><span class="comment">#url:获取页面的url链接</span></span><br><span class="line"><span class="comment">#params:url中的额外参数，字典/字节流格式</span></span><br><span class="line"><span class="comment">#**kwargs:12个控制访问参数</span></span><br><span class="line"><span class="comment">#enum'xxx'{'GET','HEAD','POST','PUT','PATCH','delete','OPTIONS'}</span></span><br></pre></td></tr></table></figure>
-<p>|—-|—-|<br>|requests.get()   |获取html界面|<br>|requests.head()|获取html.head |<br>|requests.post()  |向网页提交post |<br>|requests.put()   |向网页提交put |<br>|requests.patch()  |向网页提交局部修改 |<br>|requests.delete() |向网页提交删除请求|</p>
+
+<table>
+<thead>
+<tr>
+<th>方法</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>requests.get()</td>
+<td>获取html界面</td>
+</tr>
+<tr>
+<td>requests.head()</td>
+<td>获取html.head</td>
+</tr>
+<tr>
+<td>requests.post()</td>
+<td>向网页提交post</td>
+</tr>
+<tr>
+<td>requests.put()</td>
+<td>向网页提交put</td>
+</tr>
+<tr>
+<td>requests.patch()</td>
+<td>向网页提交局部修改</td>
+</tr>
+<tr>
+<td>requests.delete()</td>
+<td>向网页提交删除请求</td>
+</tr>
+</tbody></table>
 <h3 id="控制访问参数-kwargs"><a href="#控制访问参数-kwargs" class="headerlink" title="控制访问参数**kwargs"></a>控制访问参数**kwargs</h3><h4 id="params"><a href="#params" class="headerlink" title="params:"></a>params:</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">kv = {<span class="string">'key1'</span>: <span class="string">'value1'</span>,<span class="string">'key2'</span>: <span class="string">'value2'</span>}</span><br><span class="line">r = requests.request(<span class="string">'GET'</span>,url,params=kv)</span><br><span class="line"><span class="built_in">print</span>(r.url)</span><br></pre></td></tr></table></figure>
 <h4 id="data"><a href="#data" class="headerlink" title="data:"></a>data:</h4><h4 id="Json"><a href="#Json" class="headerlink" title="Json:"></a>Json:</h4><h4 id="headers"><a href="#headers" class="headerlink" title="headers:"></a>headers:</h4><p>典型：’user-agent’: ‘chrome/10’</p>
 <h4 id="Cookies"><a href="#Cookies" class="headerlink" title="Cookies:"></a>Cookies:</h4><h4 id="Auth"><a href="#Auth" class="headerlink" title="Auth:"></a>Auth:</h4><h4 id="files"><a href="#files" class="headerlink" title="files:"></a>files:</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">fs = {<span class="string">'file'</span>: <span class="built_in">open</span>(<span class="string">'data.xls'</span>,<span class="string">'rb'</span>)}</span><br><span class="line">r = requests.post(url,files=fs)</span><br></pre></td></tr></table></figure>
@@ -619,7 +651,22 @@ mjx-container[display="true"] + br {
 <td>HTTP相应的二进制形式</td>
 </tr>
 </tbody></table>
-<h3 id="response对象的两个常见方法"><a href="#response对象的两个常见方法" class="headerlink" title="response对象的两个常见方法"></a>response对象的两个常见方法</h3><p>|response.方法|作用|<br>|r.raise_for_status()|如果status_code不是200,引发HTTPError异常|<br>|r.encoding = r.apparent_encoding|用解析得到的编码方式更正默认编码方式|</p>
+<h3 id="response对象的两个常见方法"><a href="#response对象的两个常见方法" class="headerlink" title="response对象的两个常见方法"></a>response对象的两个常见方法</h3><table>
+<thead>
+<tr>
+<th>response.方法</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>r.raise_for_status()</td>
+<td>如果status_code不是200,引发HTTPError异常</td>
+</tr>
+<tr>
+<td>r.encoding = r.apparent_encoding</td>
+<td>用解析得到的编码方式更正默认编码方式</td>
+</tr>
+</tbody></table>
 <h2 id="1-3Requests库的六种异常"><a href="#1-3Requests库的六种异常" class="headerlink" title="1.3Requests库的六种异常"></a>1.3Requests库的六种异常</h2><table>
 <thead>
 <tr>
@@ -964,7 +1011,7 @@ mjx-container[display="true"] + br {
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-04-12 15:10:28" itemprop="dateModified" datetime="2021-04-12T15:10:28+08:00">2021-04-12</time>
+        <time title="修改时间：2021-04-12 15:12:08" itemprop="dateModified" datetime="2021-04-12T15:12:08+08:00">2021-04-12</time>
       </span>
 
   
@@ -1039,7 +1086,7 @@ mjx-container[display="true"] + br {
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-04-12 15:10:28" itemprop="dateModified" datetime="2021-04-12T15:10:28+08:00">2021-04-12</time>
+        <time title="修改时间：2021-04-12 15:12:08" itemprop="dateModified" datetime="2021-04-12T15:12:08+08:00">2021-04-12</time>
       </span>
 
   
@@ -1109,7 +1156,7 @@ mjx-container[display="true"] + br {
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-04-12 15:10:28" itemprop="dateModified" datetime="2021-04-12T15:10:28+08:00">2021-04-12</time>
+        <time title="修改时间：2021-04-12 15:12:08" itemprop="dateModified" datetime="2021-04-12T15:12:08+08:00">2021-04-12</time>
       </span>
 
   
@@ -1179,7 +1226,7 @@ mjx-container[display="true"] + br {
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-04-12 15:10:28" itemprop="dateModified" datetime="2021-04-12T15:10:28+08:00">2021-04-12</time>
+        <time title="修改时间：2021-04-12 15:12:08" itemprop="dateModified" datetime="2021-04-12T15:12:08+08:00">2021-04-12</time>
       </span>
 
   
@@ -1258,7 +1305,7 @@ mjx-container[display="true"] + br {
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-04-12 15:10:28" itemprop="dateModified" datetime="2021-04-12T15:10:28+08:00">2021-04-12</time>
+        <time title="修改时间：2021-04-12 15:12:08" itemprop="dateModified" datetime="2021-04-12T15:12:08+08:00">2021-04-12</time>
       </span>
 
   
@@ -1338,7 +1385,7 @@ mjx-container[display="true"] + br {
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-04-12 15:10:28" itemprop="dateModified" datetime="2021-04-12T15:10:28+08:00">2021-04-12</time>
+        <time title="修改时间：2021-04-12 15:12:08" itemprop="dateModified" datetime="2021-04-12T15:12:08+08:00">2021-04-12</time>
       </span>
 
   
