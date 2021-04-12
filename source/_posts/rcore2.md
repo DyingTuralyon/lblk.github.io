@@ -1,6 +1,7 @@
 ---
 title: rcore第二章知识点
 mathjax: true
+date: 2021-04-02 21:28:45
 ---
 # 1.移除os依赖
 ## 	1.1移除std
