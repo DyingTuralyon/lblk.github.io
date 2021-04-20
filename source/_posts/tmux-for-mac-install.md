@@ -51,3 +51,6 @@ cd tmux
 nroff -mdoc tmux.1|less
 ```
 # riscv-unknown-elf-gdb的安装
+[文件下载](https://rcore-os.github.io/rCore-Tutorial-Book-v3/chapter0/5setup-devel-env.html#gdb)
+[安装方法](https://github.com/LoesterFranco/riscv_gcc_prebuilt)
+
