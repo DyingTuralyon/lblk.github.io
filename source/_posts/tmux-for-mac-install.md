@@ -18,7 +18,7 @@ $ cd "$(brew --repo)"
 $ git remote set-url origin https://mirrors.ustc.edu.cn/brew.git
 # 清华大学:
 $ git remote set-url origin https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/brew.git
-
+#以上二选一
 ```
 
 ## 2
@@ -30,7 +30,7 @@ $ cd "$(brew --repo)/Library/Taps/homebrew/homebrew-core"
 $ git remote set-url origin https://mirrors.ustc.edu.cn/homebrew-core.git
 # 清华大学:
 $ git remote set-url origin https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/homebrew-core.git
-
+#以上二选一
 ```
 ## 3
 ```bash
