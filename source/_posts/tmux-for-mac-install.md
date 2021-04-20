@@ -8,6 +8,14 @@ tags:
 
 # brew 换源
 
+## 1
+
+## 2
+
+## 3
+
+## 4
+
 # tmux安装和学习
 
 # riscv-unknown-elf-gdb的安装
