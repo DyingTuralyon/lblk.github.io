@@ -228,7 +228,7 @@ mjx-container[display="true"] + br {
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
           <a href="/archives">
-          <span class="site-state-item-count">13</span>
+          <span class="site-state-item-count">17</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -267,6 +267,303 @@ mjx-container[display="true"] + br {
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://lblk.github.io/2021/04/18/first-gl/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="1642264706@qq.com">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="流放lblk的小岛">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2021/04/18/first-gl/" class="post-title-link" itemprop="url">first_gl</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2021-04-18 18:25:58" itemprop="dateCreated datePublished" datetime="2021-04-18T18:25:58+08:00">2021-04-18</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2021-04-20 10:09:40" itemprop="dateModified" datetime="2021-04-20T10:09:40+08:00">2021-04-20</time>
+      </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//</span></span><br><span class="line"><span class="comment">//  main.cpp</span></span><br><span class="line"><span class="comment">//  opengl</span></span><br><span class="line"><span class="comment">//</span></span><br><span class="line"><span class="comment">//  Created by hay on 2018/3/6.</span></span><br><span class="line"><span class="comment">//  Copyright © 2018年 hay. All rights reserved.</span></span><br><span class="line"><span class="comment">//</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="comment">// GLEW</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> GLEW_STATIC</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;GL/glew.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="comment">// GLFW</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;GLFW/glfw3.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">framebuffer_size_callback</span><span class="params">(GLFWwindow* window, <span class="keyword">int</span> width, <span class="keyword">int</span> height)</span> </span>&#123;</span><br><span class="line">    <span class="built_in">glViewport</span>(<span class="number">0</span>, <span class="number">0</span>, width, height);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="built_in">glfwInit</span>();</span><br><span class="line"></span><br><span class="line">    <span class="built_in">glfwWindowHint</span>(GLFW_CONTEXT_VERSION_MAJOR, <span class="number">4</span>);</span><br><span class="line">    <span class="built_in">glfwWindowHint</span>(GLFW_CONTEXT_VERSION_MINOR, <span class="number">1</span>);</span><br><span class="line">    <span class="built_in">glfwWindowHint</span>(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);</span><br><span class="line">    <span class="built_in">glfwWindowHint</span>(GLFW_RESIZABLE, GL_FALSE);</span><br><span class="line">    <span class="built_in">glfwWindowHint</span>(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);  <span class="comment">// for Mac OS X</span></span><br><span class="line"></span><br><span class="line">    GLFWwindow* window = <span class="built_in">glfwCreateWindow</span>(<span class="number">800</span>, <span class="number">600</span>, <span class="string">&quot;OpenGLab&quot;</span>, <span class="literal">nullptr</span>, <span class="literal">nullptr</span>);</span><br><span class="line">    <span class="keyword">if</span> (window == <span class="literal">nullptr</span>) &#123;</span><br><span class="line">        std::cout &lt;&lt; <span class="string">&quot;Failed to create GLFW window&quot;</span> &lt;&lt; std::endl;</span><br><span class="line">        <span class="built_in">glfwTerminate</span>();</span><br><span class="line">        <span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">glfwMakeContextCurrent</span>(window);</span><br><span class="line"></span><br><span class="line">    glewExperimental = GL_TRUE;</span><br><span class="line">    <span class="keyword">if</span> (<span class="built_in">glewInit</span>() != GLEW_OK) &#123;</span><br><span class="line">        std::cout &lt;&lt; <span class="string">&quot;Failed to initialize GLEW&quot;</span> &lt;&lt; std::endl;</span><br><span class="line">        <span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="built_in">glfwSetFramebufferSizeCallback</span>(window, framebuffer_size_callback);  <span class="comment">// glfwGetFramebufferSize doesnt work</span></span><br><span class="line"></span><br><span class="line">    GLfloat vertices[] = &#123;</span><br><span class="line">        <span class="number">-0.5f</span>, <span class="number">-0.5f</span>, <span class="number">0.0f</span>,</span><br><span class="line">         <span class="number">0.5f</span>, <span class="number">-0.5f</span>, <span class="number">0.0f</span>,</span><br><span class="line">         <span class="number">0.0f</span>,  <span class="number">0.5f</span>, <span class="number">0.0f</span></span><br><span class="line">    &#125;;</span><br><span class="line"><span class="comment">//VBO</span></span><br><span class="line">    GLuint VBO;</span><br><span class="line">    <span class="built_in">glGenBuffers</span>(<span class="number">1</span>, &amp;VBO);</span><br><span class="line">    <span class="built_in">glBindBuffer</span>(GL_ARRAY_BUFFER, VBO);</span><br><span class="line">    <span class="built_in">glBufferData</span>(GL_ARRAY_BUFFER, <span class="built_in"><span class="keyword">sizeof</span></span>(vertices), vertices, GL_STATIC_DRAW);</span><br><span class="line"></span><br><span class="line">    <span class="comment">// Vertex Shader</span></span><br><span class="line">    <span class="keyword">char</span>* vertexShaderSource = <span class="string">&quot;#version 330 core\n\nlayout (location = 0) in vec3 position;\n\nvoid main()\n&#123;\n\tgl_Position = vec4(position.x, position.y, position.z, 1.0);\n&#125;&quot;</span>;</span><br><span class="line"><span class="comment">//vertexShader</span></span><br><span class="line">    GLuint vertexShader;</span><br><span class="line">    vertexShader = <span class="built_in">glCreateShader</span>(GL_VERTEX_SHADER);</span><br><span class="line">    <span class="built_in">glShaderSource</span>(vertexShader, <span class="number">1</span>, &amp;vertexShaderSource, <span class="literal">NULL</span>);</span><br><span class="line">    <span class="built_in">glCompileShader</span>(vertexShader);</span><br><span class="line"></span><br><span class="line">    GLint success;</span><br><span class="line">    GLchar infoLog[<span class="number">512</span>];</span><br><span class="line">    <span class="built_in">glGetShaderiv</span>(vertexShader, GL_COMPILE_STATUS, &amp;success);</span><br><span class="line">    <span class="keyword">if</span>(!success) &#123;</span><br><span class="line">        <span class="built_in">glGetShaderInfoLog</span>(vertexShader, <span class="number">512</span>, <span class="literal">NULL</span>, infoLog);</span><br><span class="line">        std::cout &lt;&lt; <span class="string">&quot;ERROR::SHADER::VERTEX::COMPILATION_FAILED\n&quot;</span> &lt;&lt; infoLog &lt;&lt; std::endl;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// Fragment Shader</span></span><br><span class="line"><span class="comment">//fragmentShader</span></span><br><span class="line">    <span class="keyword">char</span>* fragmentShaderSource = <span class="string">&quot;#version 330 core\n\nout vec4 color;\n\nvoid main()\n&#123;\n\tcolor = vec4(1.0f, 0.5f, 0.2f, 1.0f);\n&#125;&quot;</span>;</span><br><span class="line">    GLuint fragmentShader;</span><br><span class="line">    fragmentShader = <span class="built_in">glCreateShader</span>(GL_FRAGMENT_SHADER);</span><br><span class="line">    <span class="built_in">glShaderSource</span>(fragmentShader, <span class="number">1</span>, &amp;fragmentShaderSource, <span class="literal">NULL</span>);</span><br><span class="line">    <span class="built_in">glCompileShader</span>(fragmentShader);</span><br><span class="line"></span><br><span class="line">    <span class="built_in">glGetShaderiv</span>(fragmentShader, GL_COMPILE_STATUS, &amp;success);</span><br><span class="line">    <span class="keyword">if</span>(!success) &#123;</span><br><span class="line">        <span class="built_in">glGetShaderInfoLog</span>(fragmentShader, <span class="number">512</span>, <span class="literal">NULL</span>, infoLog);</span><br><span class="line">        std::cout &lt;&lt; <span class="string">&quot;ERROR::SHADER::FRAGMENT::COMPILATION_FAILED\n&quot;</span> &lt;&lt; infoLog &lt;&lt; std::endl;</span><br><span class="line">    &#125;</span><br><span class="line"><span class="comment">//shaderProgram</span></span><br><span class="line">    GLuint shaderProgram;</span><br><span class="line">    shaderProgram = <span class="built_in">glCreateProgram</span>();</span><br><span class="line"></span><br><span class="line">    <span class="built_in">glAttachShader</span>(shaderProgram, vertexShader);</span><br><span class="line">    <span class="built_in">glAttachShader</span>(shaderProgram, fragmentShader);</span><br><span class="line">    <span class="built_in">glLinkProgram</span>(shaderProgram);</span><br><span class="line"></span><br><span class="line">    <span class="built_in">glGetProgramiv</span>(shaderProgram, GL_LINK_STATUS, &amp;success);</span><br><span class="line">    <span class="keyword">if</span>(!success) &#123;</span><br><span class="line">        <span class="built_in">glGetProgramInfoLog</span>(shaderProgram, <span class="number">512</span>, <span class="literal">NULL</span>, infoLog);</span><br><span class="line">        std::cout &lt;&lt; <span class="string">&quot;ERROR::SHADER::PROGRAM::LINK_FAILED\n&quot;</span> &lt;&lt; infoLog &lt;&lt; std::endl;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">  </span><br><span class="line">  </span><br><span class="line">  </span><br><span class="line">  </span><br><span class="line"><span class="comment">//The End</span></span><br><span class="line">    <span class="built_in">glUseProgram</span>(shaderProgram);</span><br><span class="line"></span><br><span class="line">    <span class="built_in">glDeleteShader</span>(vertexShader);</span><br><span class="line">    <span class="built_in">glDeleteShader</span>(fragmentShader);</span><br><span class="line"></span><br><span class="line">  </span><br><span class="line">  </span><br><span class="line">  </span><br><span class="line">  </span><br><span class="line">  </span><br><span class="line">  </span><br><span class="line">  </span><br><span class="line">  </span><br><span class="line">  </span><br><span class="line">  </span><br><span class="line">  </span><br><span class="line">  </span><br><span class="line">  </span><br><span class="line">  </span><br><span class="line">  </span><br><span class="line">  </span><br><span class="line">  </span><br><span class="line">    <span class="built_in">glVertexAttribPointer</span>(<span class="number">0</span>, <span class="number">3</span>, GL_FLOAT, GL_FALSE, <span class="number">3</span> * <span class="built_in"><span class="keyword">sizeof</span></span>(GLfloat), (GLvoid*)<span class="number">0</span>);</span><br><span class="line">    <span class="built_in">glEnableVertexAttribArray</span>(<span class="number">0</span>);</span><br><span class="line"></span><br><span class="line">  </span><br><span class="line">  </span><br><span class="line">  </span><br><span class="line"></span><br><span class="line">    GLuint VAO;</span><br><span class="line">    <span class="built_in">glGenVertexArrays</span>(<span class="number">1</span>, &amp;VAO);</span><br><span class="line"></span><br><span class="line">    <span class="built_in">glBindVertexArray</span>(VAO);</span><br><span class="line">    <span class="built_in">glBindBuffer</span>(GL_ARRAY_BUFFER, VBO);</span><br><span class="line">    <span class="built_in">glBufferData</span>(GL_ARRAY_BUFFER, <span class="built_in"><span class="keyword">sizeof</span></span>(vertices), vertices, GL_STATIC_DRAW);</span><br><span class="line">    <span class="built_in">glVertexAttribPointer</span>(<span class="number">0</span>, <span class="number">3</span>, GL_FLOAT, GL_FALSE, <span class="number">3</span> * <span class="built_in"><span class="keyword">sizeof</span></span>(GLfloat), (GLvoid*)<span class="number">0</span>);</span><br><span class="line">    <span class="built_in">glEnableVertexAttribArray</span>(<span class="number">0</span>);</span><br><span class="line">    <span class="built_in">glBindVertexArray</span>(<span class="number">0</span>);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    std::cout &lt;&lt; <span class="string">&quot;OpenGL Vendor: &quot;</span> &lt;&lt; <span class="built_in">glGetString</span>(GL_VENDOR) &lt;&lt; std::endl;</span><br><span class="line">    std::cout &lt;&lt; <span class="string">&quot;OpenGL Renderer: &quot;</span> &lt;&lt; <span class="built_in">glGetString</span>(GL_RENDERER) &lt;&lt; std::endl;</span><br><span class="line">    std::cout &lt;&lt; <span class="string">&quot;OpenGL Version: &quot;</span> &lt;&lt; <span class="built_in">glGetString</span>(GL_VERSION) &lt;&lt; std::endl;</span><br><span class="line">    std::cout &lt;&lt; <span class="string">&quot;GLFW library version: &quot;</span> &lt;&lt; <span class="built_in">glfwGetVersionString</span>() &lt;&lt; std::endl;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="keyword">while</span> (!<span class="built_in">glfwWindowShouldClose</span>(window)) &#123;</span><br><span class="line">        <span class="built_in">glfwPollEvents</span>();</span><br><span class="line"></span><br><span class="line">        <span class="built_in">glClearColor</span>(<span class="number">0.2f</span>, <span class="number">0.3f</span>, <span class="number">0.3f</span>, <span class="number">1.0f</span>);</span><br><span class="line">        <span class="built_in">glClear</span>(GL_COLOR_BUFFER_BIT);</span><br><span class="line"></span><br><span class="line">        <span class="built_in">glUseProgram</span>(shaderProgram);</span><br><span class="line">        <span class="built_in">glBindVertexArray</span>(VAO);</span><br><span class="line">        <span class="built_in">glDrawArrays</span>(GL_TRIANGLES, <span class="number">0</span>, <span class="number">3</span>);</span><br><span class="line">        <span class="built_in">glBindVertexArray</span>(<span class="number">0</span>);</span><br><span class="line"></span><br><span class="line">        <span class="built_in">glfwSwapBuffers</span>(window);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="built_in">glfwTerminate</span>();</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//来自https://blog.csdn.net/HiyoungTsui/article/details/79475415</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>在学习计算机各个具体模版的使用时，我领悟了某种神奇的学习方法：</p>
+<p>在tutorial一股脑塞给你一组全新的概念时既不要像文科一样死记硬背，也不要像理科一样试图彻底的理解，因为cs中的许多概念其名字与其具体用法是息息相关的，在不了解作用时就尝试完全理解只能导向错误理解或是畏难情绪。</p>
+<p>以下是我自己发明的concept-tree方法：</p>
+<p>先把概念用纸笔记下来，然后把它贴在一边，接下来一边学习（在脑中丰富概念树的内容），一边回忆概念树上各概念之间的联系。</p>
+<p>以下是概念树：</p>
+<h1 id="缓冲对象类型"><a href="#缓冲对象类型" class="headerlink" title="缓冲对象类型"></a>缓冲对象类型</h1><h1 id="着色器"><a href="#着色器" class="headerlink" title="着色器"></a>着色器</h1><h2 id="着色器的创建"><a href="#着色器的创建" class="headerlink" title="着色器的创建"></a>着色器的创建</h2><h2 id="着色器的组合"><a href="#着色器的组合" class="headerlink" title="着色器的组合"></a>着色器的组合</h2><h1 id="索引缓冲对象"><a href="#索引缓冲对象" class="headerlink" title="索引缓冲对象"></a>索引缓冲对象</h1>
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://lblk.github.io/2021/04/17/tmux-for-mac-install/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="1642264706@qq.com">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="流放lblk的小岛">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2021/04/17/tmux-for-mac-install/" class="post-title-link" itemprop="url">tmux_for_mac_install</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2021-04-17 16:58:41" itemprop="dateCreated datePublished" datetime="2021-04-17T16:58:41+08:00">2021-04-17</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2021-04-20 10:09:40" itemprop="dateModified" datetime="2021-04-20T10:09:40+08:00">2021-04-20</time>
+      </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>本文将解决：</p>
+<h1 id="brew-换源"><a href="#brew-换源" class="headerlink" title="brew 换源"></a>brew 换源</h1><h2 id="1"><a href="#1" class="headerlink" title="1"></a>1</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment"># 替换brew.git:</span></span><br><span class="line">$ <span class="built_in">cd</span> <span class="string">&quot;<span class="subst">$(brew --repo)</span>&quot;</span></span><br><span class="line"><span class="comment"># 中国科大:</span></span><br><span class="line">$ git remote set-url origin https://mirrors.ustc.edu.cn/brew.git</span><br><span class="line"><span class="comment"># 清华大学:</span></span><br><span class="line">$ git remote set-url origin https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/brew.git</span><br><span class="line"><span class="comment">#以上二选一</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="2"><a href="#2" class="headerlink" title="2"></a>2</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment"># 替换homebrew-core.git:</span></span><br><span class="line">$ <span class="built_in">cd</span> <span class="string">&quot;<span class="subst">$(brew --repo)</span>/Library/Taps/homebrew/homebrew-core&quot;</span></span><br><span class="line"><span class="comment"># 中国科大:</span></span><br><span class="line">$ git remote set-url origin https://mirrors.ustc.edu.cn/homebrew-core.git</span><br><span class="line"><span class="comment"># 清华大学:</span></span><br><span class="line">$ git remote set-url origin https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/homebrew-core.git</span><br><span class="line"><span class="comment">#以上二选一</span></span><br></pre></td></tr></table></figure>
+<h2 id="3"><a href="#3" class="headerlink" title="3"></a>3</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew update</span><br></pre></td></tr></table></figure>
+<h2 id="4"><a href="#4" class="headerlink" title="4"></a>4</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$echo</span> <span class="string">&#x27;export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles/bottles/&#x27;</span> &gt;&gt; ~/.zshrc</span><br><span class="line"><span class="variable">$source</span> ~/.zshrc</span><br></pre></td></tr></table></figure>
+<p>以上要注意我是用的zsh，如果你用的是bash终端，把上面的zshrc替换为bash_profile即可</p>
+<h1 id="tmux安装和学习"><a href="#tmux安装和学习" class="headerlink" title="tmux安装和学习"></a>tmux安装和学习</h1><p>第一次见到这种格式的tutorial，将就下吧</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git clone https:&#x2F;&#x2F;github.com&#x2F;tmux&#x2F;tmux.git</span><br><span class="line">cd tmux</span><br><span class="line">nroff -mdoc tmux.1|less</span><br></pre></td></tr></table></figure>
+<h1 id="riscv-unknown-elf-gdb的安装"><a href="#riscv-unknown-elf-gdb的安装" class="headerlink" title="riscv-unknown-elf-gdb的安装"></a>riscv-unknown-elf-gdb的安装</h1><p><a target="_blank" rel="noopener" href="https://rcore-os.github.io/rCore-Tutorial-Book-v3/chapter0/5setup-devel-env.html#gdb">文件下载</a><br><a target="_blank" rel="noopener" href="https://github.com/LoesterFranco/riscv_gcc_prebuilt">安装方法</a></p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://lblk.github.io/2021/04/17/activ-func-to-approx/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="1642264706@qq.com">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="流放lblk的小岛">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2021/04/17/activ-func-to-approx/" class="post-title-link" itemprop="url">activ_func_to_approx</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2021-04-17 11:15:39" itemprop="dateCreated datePublished" datetime="2021-04-17T11:15:39+08:00">2021-04-17</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2021-04-20 10:09:40" itemprop="dateModified" datetime="2021-04-20T10:09:40+08:00">2021-04-20</time>
+      </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://lblk.github.io/2021/04/16/install-tmux/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="1642264706@qq.com">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="流放lblk的小岛">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2021/04/16/install-tmux/" class="post-title-link" itemprop="url">install_tmux</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2021-04-17 00:36:13" itemprop="dateCreated datePublished" datetime="2021-04-17T00:36:13+08:00">2021-04-17</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2021-04-20 10:09:40" itemprop="dateModified" datetime="2021-04-20T10:09:40+08:00">2021-04-20</time>
+      </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
     <link itemprop="mainEntityOfPage" href="https://lblk.github.io/2021/04/16/math-prob-utt-eq-Pu/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -290,10 +587,16 @@ mjx-container[display="true"] + br {
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">发表于</span>
-      
 
-      <time title="创建时间：2021-04-16 16:29:36 / 修改时间：17:25:41" itemprop="dateCreated datePublished" datetime="2021-04-16T16:29:36+08:00">2021-04-16</time>
+      <time title="创建时间：2021-04-16 16:29:36" itemprop="dateCreated datePublished" datetime="2021-04-16T16:29:36+08:00">2021-04-16</time>
     </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2021-04-20 10:09:40" itemprop="dateModified" datetime="2021-04-20T10:09:40+08:00">2021-04-20</time>
+      </span>
 
   
 </div>
@@ -319,6 +622,12 @@ mjx-container[display="true"] + br {
 <p><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -1.021ex" xmlns="http://www.w3.org/2000/svg" width="12.849ex" height="2.977ex" role="img" focusable="false" viewBox="0 -864.9 5679 1316"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><g data-mml-node="math"><g data-mml-node="msub"><g data-mml-node="mi"><path data-c="1D462" d="M21 287Q21 295 30 318T55 370T99 420T158 442Q204 442 227 417T250 358Q250 340 216 246T182 105Q182 62 196 45T238 27T291 44T328 78L339 95Q341 99 377 247Q407 367 413 387T427 416Q444 431 463 431Q480 431 488 421T496 402L420 84Q419 79 419 68Q419 43 426 35T447 26Q469 29 482 57T512 145Q514 153 532 153Q551 153 551 144Q550 139 549 130T540 98T523 55T498 17T462 -8Q454 -10 438 -10Q372 -10 347 46Q345 45 336 36T318 21T296 6T267 -6T233 -11Q189 -11 155 7Q103 38 103 113Q103 170 138 262T173 379Q173 380 173 381Q173 390 173 393T169 400T158 404H154Q131 404 112 385T82 344T65 302T57 280Q55 278 41 278H27Q21 284 21 287Z"></path></g><g data-mml-node="mn" transform="translate(572, -150) scale(0.707)"><path data-c="32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path></g></g><g data-mml-node="mo" transform="translate(1253.3, 0)"><path data-c="3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path></g><g data-mml-node="mfrac" transform="translate(2309.1, 0)"><g data-mml-node="mn" transform="translate(438.7, 394) scale(0.707)"><path data-c="36" d="M42 313Q42 476 123 571T303 666Q372 666 402 630T432 550Q432 525 418 510T379 495Q356 495 341 509T326 548Q326 592 373 601Q351 623 311 626Q240 626 194 566Q147 500 147 364L148 360Q153 366 156 373Q197 433 263 433H267Q313 433 348 414Q372 400 396 374T435 317Q456 268 456 210V192Q456 169 451 149Q440 90 387 34T253 -22Q225 -22 199 -14T143 16T92 75T56 172T42 313ZM257 397Q227 397 205 380T171 335T154 278T148 216Q148 133 160 97T198 39Q222 21 251 21Q302 21 329 59Q342 77 347 104T352 209Q352 289 347 316T329 361Q302 397 257 397Z"></path></g><g data-mml-node="msub" transform="translate(220, -345) scale(0.707)"><g data-mml-node="mi"><path data-c="1D436" d="M50 252Q50 367 117 473T286 641T490 704Q580 704 633 653Q642 643 648 636T656 626L657 623Q660 623 684 649Q691 655 699 663T715 679T725 690L740 705H746Q760 705 760 698Q760 694 728 561Q692 422 692 421Q690 416 687 415T669 413H653Q647 419 647 422Q647 423 648 429T650 449T651 481Q651 552 619 605T510 659Q484 659 454 652T382 628T299 572T226 479Q194 422 175 346T156 222Q156 108 232 58Q280 24 350 24Q441 24 512 92T606 240Q610 253 612 255T628 257Q648 257 648 248Q648 243 647 239Q618 132 523 55T319 -22Q206 -22 128 53T50 252Z"></path></g><g data-mml-node="mn" transform="translate(715, -150) scale(0.707)"><path data-c="32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path></g></g><rect width="990.9" height="60" x="120" y="220"></rect></g><g data-mml-node="mi" transform="translate(3540, 0)"><path data-c="1D461" d="M26 385Q19 392 19 395Q19 399 22 411T27 425Q29 430 36 430T87 431H140L159 511Q162 522 166 540T173 566T179 586T187 603T197 615T211 624T229 626Q247 625 254 615T261 596Q261 589 252 549T232 470L222 433Q222 431 272 431H323Q330 424 330 420Q330 398 317 385H210L174 240Q135 80 135 68Q135 26 162 26Q197 26 230 60T283 144Q285 150 288 151T303 153H307Q322 153 322 145Q322 142 319 133Q314 117 301 95T267 48T216 6T155 -11Q125 -11 98 4T59 56Q57 64 57 83V101L92 241Q127 382 128 383Q128 385 77 385H26Z"></path></g><g data-mml-node="TeXAtom" data-mjx-texclass="ORD" transform="translate(3901, 0)"><g data-mml-node="mo"><path data-c="2C6" d="M112 560L249 694L257 686Q387 562 387 560L361 531Q359 532 303 581L250 627L195 580Q182 569 169 557T148 538L140 532Q138 530 125 546L112 560Z"></path></g></g><g data-mml-node="TeXAtom" data-mjx-texclass="ORD" transform="translate(4401, 0)"><g data-mml-node="mo"><path data-c="2212" d="M84 237T84 250T98 270H679Q694 262 694 250T679 230H98Q84 237 84 250Z"></path></g><g data-mml-node="mn" transform="translate(778, 0)"><path data-c="32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path></g></g></g></g></svg></mjx-container></p>
 <p><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -1.428ex" xmlns="http://www.w3.org/2000/svg" width="15.156ex" height="4.208ex" role="img" focusable="false" viewBox="0 -1228.9 6699 1860"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><g data-mml-node="math"><g data-mml-node="msub"><g data-mml-node="mi"><path data-c="1D462" d="M21 287Q21 295 30 318T55 370T99 420T158 442Q204 442 227 417T250 358Q250 340 216 246T182 105Q182 62 196 45T238 27T291 44T328 78L339 95Q341 99 377 247Q407 367 413 387T427 416Q444 431 463 431Q480 431 488 421T496 402L420 84Q419 79 419 68Q419 43 426 35T447 26Q469 29 482 57T512 145Q514 153 532 153Q551 153 551 144Q550 139 549 130T540 98T523 55T498 17T462 -8Q454 -10 438 -10Q372 -10 347 46Q345 45 336 36T318 21T296 6T267 -6T233 -11Q189 -11 155 7Q103 38 103 113Q103 170 138 262T173 379Q173 380 173 381Q173 390 173 393T169 400T158 404H154Q131 404 112 385T82 344T65 302T57 280Q55 278 41 278H27Q21 284 21 287Z"></path></g><g data-mml-node="mn" transform="translate(572, -150) scale(0.707)"><path data-c="33" d="M127 463Q100 463 85 480T69 524Q69 579 117 622T233 665Q268 665 277 664Q351 652 390 611T430 522Q430 470 396 421T302 350L299 348Q299 347 308 345T337 336T375 315Q457 262 457 175Q457 96 395 37T238 -22Q158 -22 100 21T42 130Q42 158 60 175T105 193Q133 193 151 175T169 130Q169 119 166 110T159 94T148 82T136 74T126 70T118 67L114 66Q165 21 238 21Q293 21 321 74Q338 107 338 175V195Q338 290 274 322Q259 328 213 329L171 330L168 332Q166 335 166 348Q166 366 174 366Q202 366 232 371Q266 376 294 413T322 525V533Q322 590 287 612Q265 626 240 626Q208 626 181 615T143 592T132 580H135Q138 579 143 578T153 573T165 566T175 555T183 540T186 520Q186 498 172 481T127 463Z"></path></g></g><g data-mml-node="mo" transform="translate(1253.3, 0)"><path data-c="3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path></g><g data-mml-node="msqrt" transform="translate(2309.1, 0)"><g transform="translate(1020, 0)"><g data-mml-node="mfrac"><g data-mml-node="mn" transform="translate(438.7, 394) scale(0.707)"><path data-c="32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path></g><g data-mml-node="msub" transform="translate(220, -345) scale(0.707)"><g data-mml-node="mi"><path data-c="1D436" d="M50 252Q50 367 117 473T286 641T490 704Q580 704 633 653Q642 643 648 636T656 626L657 623Q660 623 684 649Q691 655 699 663T715 679T725 690L740 705H746Q760 705 760 698Q760 694 728 561Q692 422 692 421Q690 416 687 415T669 413H653Q647 419 647 422Q647 423 648 429T650 449T651 481Q651 552 619 605T510 659Q484 659 454 652T382 628T299 572T226 479Q194 422 175 346T156 222Q156 108 232 58Q280 24 350 24Q441 24 512 92T606 240Q610 253 612 255T628 257Q648 257 648 248Q648 243 647 239Q618 132 523 55T319 -22Q206 -22 128 53T50 252Z"></path></g><g data-mml-node="mn" transform="translate(715, -150) scale(0.707)"><path data-c="33" d="M127 463Q100 463 85 480T69 524Q69 579 117 622T233 665Q268 665 277 664Q351 652 390 611T430 522Q430 470 396 421T302 350L299 348Q299 347 308 345T337 336T375 315Q457 262 457 175Q457 96 395 37T238 -22Q158 -22 100 21T42 130Q42 158 60 175T105 193Q133 193 151 175T169 130Q169 119 166 110T159 94T148 82T136 74T126 70T118 67L114 66Q165 21 238 21Q293 21 321 74Q338 107 338 175V195Q338 290 274 322Q259 328 213 329L171 330L168 332Q166 335 166 348Q166 366 174 366Q202 366 232 371Q266 376 294 413T322 525V533Q322 590 287 612Q265 626 240 626Q208 626 181 615T143 592T132 580H135Q138 579 143 578T153 573T165 566T175 555T183 540T186 520Q186 498 172 481T127 463Z"></path></g></g><rect width="990.9" height="60" x="120" y="220"></rect></g></g><g data-mml-node="mo" transform="translate(0, 18.9)"><path data-c="221A" d="M1001 1150Q1017 1150 1020 1132Q1020 1127 741 244L460 -643Q453 -650 436 -650H424Q423 -647 423 -645T421 -640T419 -631T415 -617T408 -594T399 -560T385 -512T367 -448T343 -364T312 -259L203 119L138 41L111 67L212 188L264 248L472 -474L983 1140Q988 1150 1001 1150Z"></path></g><rect width="1230.9" height="60" x="1020" y="1108.9"></rect></g><g data-mml-node="mi" transform="translate(4560, 0)"><path data-c="1D461" d="M26 385Q19 392 19 395Q19 399 22 411T27 425Q29 430 36 430T87 431H140L159 511Q162 522 166 540T173 566T179 586T187 603T197 615T211 624T229 626Q247 625 254 615T261 596Q261 589 252 549T232 470L222 433Q222 431 272 431H323Q330 424 330 420Q330 398 317 385H210L174 240Q135 80 135 68Q135 26 162 26Q197 26 230 60T283 144Q285 150 288 151T303 153H307Q322 153 322 145Q322 142 319 133Q314 117 301 95T267 48T216 6T155 -11Q125 -11 98 4T59 56Q57 64 57 83V101L92 241Q127 382 128 383Q128 385 77 385H26Z"></path></g><g data-mml-node="TeXAtom" data-mjx-texclass="ORD" transform="translate(4921, 0)"><g data-mml-node="mo"><path data-c="2C6" d="M112 560L249 694L257 686Q387 562 387 560L361 531Q359 532 303 581L250 627L195 580Q182 569 169 557T148 538L140 532Q138 530 125 546L112 560Z"></path></g></g><g data-mml-node="TeXAtom" data-mjx-texclass="ORD" transform="translate(5421, 0)"><g data-mml-node="mo"><path data-c="2212" d="M84 237T84 250T98 270H679Q694 262 694 250T679 230H98Q84 237 84 250Z"></path></g><g data-mml-node="mn" transform="translate(778, 0)"><path data-c="31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path></g></g></g></g></svg></mjx-container><br>。。。</p>
 <p>当P[u]的阶为3时，不难得到如下的待定系数问题：<br><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.566ex" xmlns="http://www.w3.org/2000/svg" width="16.346ex" height="2.283ex" role="img" focusable="false" viewBox="0 -759 7225.1 1009"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><g data-mml-node="math"><g data-mml-node="mo"><path data-c="2211" d="M61 748Q64 750 489 750H913L954 640Q965 609 976 579T993 533T999 516H979L959 517Q936 579 886 621T777 682Q724 700 655 705T436 710H319Q183 710 183 709Q186 706 348 484T511 259Q517 250 513 244L490 216Q466 188 420 134T330 27L149 -187Q149 -188 362 -188Q388 -188 436 -188T506 -189Q679 -189 778 -162T936 -43Q946 -27 959 6H999L913 -249L489 -250Q65 -250 62 -248Q56 -246 56 -239Q56 -234 118 -161Q186 -81 245 -11L428 206Q428 207 242 462L57 717L56 728Q56 744 61 748Z"></path></g><g data-mml-node="msub" transform="translate(1222.7, 0)"><g data-mml-node="mi"><path data-c="1D462" d="M21 287Q21 295 30 318T55 370T99 420T158 442Q204 442 227 417T250 358Q250 340 216 246T182 105Q182 62 196 45T238 27T291 44T328 78L339 95Q341 99 377 247Q407 367 413 387T427 416Q444 431 463 431Q480 431 488 421T496 402L420 84Q419 79 419 68Q419 43 426 35T447 26Q469 29 482 57T512 145Q514 153 532 153Q551 153 551 144Q550 139 549 130T540 98T523 55T498 17T462 -8Q454 -10 438 -10Q372 -10 347 46Q345 45 336 36T318 21T296 6T267 -6T233 -11Q189 -11 155 7Q103 38 103 113Q103 170 138 262T173 379Q173 380 173 381Q173 390 173 393T169 400T158 404H154Q131 404 112 385T82 344T65 302T57 280Q55 278 41 278H27Q21 284 21 287Z"></path></g><g data-mml-node="mi" transform="translate(572, -150) scale(0.707)"><path data-c="1D456" d="M184 600Q184 624 203 642T247 661Q265 661 277 649T290 619Q290 596 270 577T226 557Q211 557 198 567T184 600ZM21 287Q21 295 30 318T54 369T98 420T158 442Q197 442 223 419T250 357Q250 340 236 301T196 196T154 83Q149 61 149 51Q149 26 166 26Q175 26 185 29T208 43T235 78T260 137Q263 149 265 151T282 153Q302 153 302 143Q302 135 293 112T268 61T223 11T161 -11Q129 -11 102 10T74 74Q74 91 79 106T122 220Q160 321 166 341T173 380Q173 404 156 404H154Q124 404 99 371T61 287Q60 286 59 284T58 281T56 279T53 278T49 278T41 278H27Q21 284 21 287Z"></path></g></g><g data-mml-node="mo" transform="translate(2088.6, 0)"><path data-c="28" d="M94 250Q94 319 104 381T127 488T164 576T202 643T244 695T277 729T302 750H315H319Q333 750 333 741Q333 738 316 720T275 667T226 581T184 443T167 250T184 58T225 -81T274 -167T316 -220T333 -241Q333 -250 318 -250H315H302L274 -226Q180 -141 137 -14T94 250Z"></path></g><g data-mml-node="mn" transform="translate(2477.6, 0)"><path data-c="30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z"></path></g><g data-mml-node="mo" transform="translate(2977.6, 0)"><path data-c="29" d="M60 749L64 750Q69 750 74 750H86L114 726Q208 641 251 514T294 250Q294 182 284 119T261 12T224 -76T186 -143T145 -194T113 -227T90 -246Q87 -249 86 -250H74Q66 -250 63 -250T58 -247T55 -238Q56 -237 66 -225Q221 -64 221 250T66 725Q56 737 55 738Q55 746 60 749Z"></path></g><g data-mml-node="mo" transform="translate(3588.8, 0)"><path data-c="2B" d="M56 237T56 250T70 270H369V420L370 570Q380 583 389 583Q402 583 409 568V270H707Q722 262 722 250T707 230H409V-68Q401 -82 391 -82H389H387Q375 -82 369 -68V230H70Q56 237 56 250Z"></path></g><g data-mml-node="msup" transform="translate(4589.1, 0)"><g data-mml-node="mi"><path data-c="1D44E" d="M33 157Q33 258 109 349T280 441Q331 441 370 392Q386 422 416 422Q429 422 439 414T449 394Q449 381 412 234T374 68Q374 43 381 35T402 26Q411 27 422 35Q443 55 463 131Q469 151 473 152Q475 153 483 153H487Q506 153 506 144Q506 138 501 117T481 63T449 13Q436 0 417 -8Q409 -10 393 -10Q359 -10 336 5T306 36L300 51Q299 52 296 50Q294 48 292 46Q233 -10 172 -10Q117 -10 75 30T33 157ZM351 328Q351 334 346 350T323 385T277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q217 26 254 59T298 110Q300 114 325 217T351 328Z"></path></g><g data-mml-node="mo" transform="translate(529, 363) scale(0.707)"><path data-c="2032" d="M79 43Q73 43 52 49T30 61Q30 68 85 293T146 528Q161 560 198 560Q218 560 240 545T262 501Q262 496 260 486Q259 479 173 263T84 45T79 43Z"></path></g></g><g data-mml-node="mo" transform="translate(5640.3, 0)"><path data-c="3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path></g><g data-mml-node="mi" transform="translate(6696.1, 0)"><path data-c="1D44E" d="M33 157Q33 258 109 349T280 441Q331 441 370 392Q386 422 416 422Q429 422 439 414T449 394Q449 381 412 234T374 68Q374 43 381 35T402 26Q411 27 422 35Q443 55 463 131Q469 151 473 152Q475 153 483 153H487Q506 153 506 144Q506 138 501 117T481 63T449 13Q436 0 417 -8Q409 -10 393 -10Q359 -10 336 5T306 36L300 51Q299 52 296 50Q294 48 292 46Q233 -10 172 -10Q117 -10 75 30T33 157ZM351 328Q351 334 346 350T323 385T277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q217 26 254 59T298 110Q300 114 325 217T351 328Z"></path></g></g></g></svg></mjx-container><br><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.592ex" xmlns="http://www.w3.org/2000/svg" width="15.894ex" height="2.309ex" role="img" focusable="false" viewBox="0 -759 7025.1 1020.7"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><g data-mml-node="math"><g data-mml-node="mo"><path data-c="2211" d="M61 748Q64 750 489 750H913L954 640Q965 609 976 579T993 533T999 516H979L959 517Q936 579 886 621T777 682Q724 700 655 705T436 710H319Q183 710 183 709Q186 706 348 484T511 259Q517 250 513 244L490 216Q466 188 420 134T330 27L149 -187Q149 -188 362 -188Q388 -188 436 -188T506 -189Q679 -189 778 -162T936 -43Q946 -27 959 6H999L913 -249L489 -250Q65 -250 62 -248Q56 -246 56 -239Q56 -234 118 -161Q186 -81 245 -11L428 206Q428 207 242 462L57 717L56 728Q56 744 61 748Z"></path></g><g data-mml-node="msubsup" transform="translate(1222.7, 0)"><g data-mml-node="mi"><path data-c="1D462" d="M21 287Q21 295 30 318T55 370T99 420T158 442Q204 442 227 417T250 358Q250 340 216 246T182 105Q182 62 196 45T238 27T291 44T328 78L339 95Q341 99 377 247Q407 367 413 387T427 416Q444 431 463 431Q480 431 488 421T496 402L420 84Q419 79 419 68Q419 43 426 35T447 26Q469 29 482 57T512 145Q514 153 532 153Q551 153 551 144Q550 139 549 130T540 98T523 55T498 17T462 -8Q454 -10 438 -10Q372 -10 347 46Q345 45 336 36T318 21T296 6T267 -6T233 -11Q189 -11 155 7Q103 38 103 113Q103 170 138 262T173 379Q173 380 173 381Q173 390 173 393T169 400T158 404H154Q131 404 112 385T82 344T65 302T57 280Q55 278 41 278H27Q21 284 21 287Z"></path></g><g data-mml-node="mo" transform="translate(572, 363) scale(0.707)"><path data-c="2032" d="M79 43Q73 43 52 49T30 61Q30 68 85 293T146 528Q161 560 198 560Q218 560 240 545T262 501Q262 496 260 486Q259 479 173 263T84 45T79 43Z"></path></g><g data-mml-node="mi" transform="translate(572, -254) scale(0.707)"><path data-c="1D456" d="M184 600Q184 624 203 642T247 661Q265 661 277 649T290 619Q290 596 270 577T226 557Q211 557 198 567T184 600ZM21 287Q21 295 30 318T54 369T98 420T158 442Q197 442 223 419T250 357Q250 340 236 301T196 196T154 83Q149 61 149 51Q149 26 166 26Q175 26 185 29T208 43T235 78T260 137Q263 149 265 151T282 153Q302 153 302 143Q302 135 293 112T268 61T223 11T161 -11Q129 -11 102 10T74 74Q74 91 79 106T122 220Q160 321 166 341T173 380Q173 404 156 404H154Q124 404 99 371T61 287Q60 286 59 284T58 281T56 279T53 278T49 278T41 278H27Q21 284 21 287Z"></path></g></g><g data-mml-node="mo" transform="translate(2088.6, 0)"><path data-c="28" d="M94 250Q94 319 104 381T127 488T164 576T202 643T244 695T277 729T302 750H315H319Q333 750 333 741Q333 738 316 720T275 667T226 581T184 443T167 250T184 58T225 -81T274 -167T316 -220T333 -241Q333 -250 318 -250H315H302L274 -226Q180 -141 137 -14T94 250Z"></path></g><g data-mml-node="mn" transform="translate(2477.6, 0)"><path data-c="30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z"></path></g><g data-mml-node="mo" transform="translate(2977.6, 0)"><path data-c="29" d="M60 749L64 750Q69 750 74 750H86L114 726Q208 641 251 514T294 250Q294 182 284 119T261 12T224 -76T186 -143T145 -194T113 -227T90 -246Q87 -249 86 -250H74Q66 -250 63 -250T58 -247T55 -238Q56 -237 66 -225Q221 -64 221 250T66 725Q56 737 55 738Q55 746 60 749Z"></path></g><g data-mml-node="mo" transform="translate(3588.8, 0)"><path data-c="2B" d="M56 237T56 250T70 270H369V420L370 570Q380 583 389 583Q402 583 409 568V270H707Q722 262 722 250T707 230H409V-68Q401 -82 391 -82H389H387Q375 -82 369 -68V230H70Q56 237 56 250Z"></path></g><g data-mml-node="msup" transform="translate(4589.1, 0)"><g data-mml-node="mi"><path data-c="1D44F" d="M73 647Q73 657 77 670T89 683Q90 683 161 688T234 694Q246 694 246 685T212 542Q204 508 195 472T180 418L176 399Q176 396 182 402Q231 442 283 442Q345 442 383 396T422 280Q422 169 343 79T173 -11Q123 -11 82 27T40 150V159Q40 180 48 217T97 414Q147 611 147 623T109 637Q104 637 101 637H96Q86 637 83 637T76 640T73 647ZM336 325V331Q336 405 275 405Q258 405 240 397T207 376T181 352T163 330L157 322L136 236Q114 150 114 114Q114 66 138 42Q154 26 178 26Q211 26 245 58Q270 81 285 114T318 219Q336 291 336 325Z"></path></g><g data-mml-node="mo" transform="translate(429, 363) scale(0.707)"><path data-c="2032" d="M79 43Q73 43 52 49T30 61Q30 68 85 293T146 528Q161 560 198 560Q218 560 240 545T262 501Q262 496 260 486Q259 479 173 263T84 45T79 43Z"></path></g></g><g data-mml-node="mo" transform="translate(5540.3, 0)"><path data-c="3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path></g><g data-mml-node="mi" transform="translate(6596.1, 0)"><path data-c="1D44F" d="M73 647Q73 657 77 670T89 683Q90 683 161 688T234 694Q246 694 246 685T212 542Q204 508 195 472T180 418L176 399Q176 396 182 402Q231 442 283 442Q345 442 383 396T422 280Q422 169 343 79T173 -11Q123 -11 82 27T40 150V159Q40 180 48 217T97 414Q147 611 147 623T109 637Q104 637 101 637H96Q86 637 83 637T76 640T73 647ZM336 325V331Q336 405 275 405Q258 405 240 397T207 376T181 352T163 330L157 322L136 236Q114 150 114 114Q114 66 138 42Q154 26 178 26Q211 26 245 58Q270 81 285 114T318 219Q336 291 336 325Z"></path></g></g></g></svg></mjx-container><br>从以上问题得到a’、b’，就得到u的完整形式。<br>u = u_0+u_1+u_2+u_3+b’t+a’<br>问题就在于实际上u_1中的正负号尚不确定，那么就无法求解待定系数问题</p>
+<p>在一些情况下，我们可能需要求解其他的边界条件，比如：</p>
+<p><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.566ex" xmlns="http://www.w3.org/2000/svg" width="9.845ex" height="2.262ex" role="img" focusable="false" viewBox="0 -750 4351.6 1000"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="1D462" d="M21 287Q21 295 30 318T55 370T99 420T158 442Q204 442 227 417T250 358Q250 340 216 246T182 105Q182 62 196 45T238 27T291 44T328 78L339 95Q341 99 377 247Q407 367 413 387T427 416Q444 431 463 431Q480 431 488 421T496 402L420 84Q419 79 419 68Q419 43 426 35T447 26Q469 29 482 57T512 145Q514 153 532 153Q551 153 551 144Q550 139 549 130T540 98T523 55T498 17T462 -8Q454 -10 438 -10Q372 -10 347 46Q345 45 336 36T318 21T296 6T267 -6T233 -11Q189 -11 155 7Q103 38 103 113Q103 170 138 262T173 379Q173 380 173 381Q173 390 173 393T169 400T158 404H154Q131 404 112 385T82 344T65 302T57 280Q55 278 41 278H27Q21 284 21 287Z"></path></g><g data-mml-node="mo" transform="translate(572, 0)"><path data-c="28" d="M94 250Q94 319 104 381T127 488T164 576T202 643T244 695T277 729T302 750H315H319Q333 750 333 741Q333 738 316 720T275 667T226 581T184 443T167 250T184 58T225 -81T274 -167T316 -220T333 -241Q333 -250 318 -250H315H302L274 -226Q180 -141 137 -14T94 250Z"></path></g><g data-mml-node="mi" transform="translate(961, 0)"><path data-c="1D44E" d="M33 157Q33 258 109 349T280 441Q331 441 370 392Q386 422 416 422Q429 422 439 414T449 394Q449 381 412 234T374 68Q374 43 381 35T402 26Q411 27 422 35Q443 55 463 131Q469 151 473 152Q475 153 483 153H487Q506 153 506 144Q506 138 501 117T481 63T449 13Q436 0 417 -8Q409 -10 393 -10Q359 -10 336 5T306 36L300 51Q299 52 296 50Q294 48 292 46Q233 -10 172 -10Q117 -10 75 30T33 157ZM351 328Q351 334 346 350T323 385T277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q217 26 254 59T298 110Q300 114 325 217T351 328Z"></path></g><g data-mml-node="mo" transform="translate(1490, 0)"><path data-c="29" d="M60 749L64 750Q69 750 74 750H86L114 726Q208 641 251 514T294 250Q294 182 284 119T261 12T224 -76T186 -143T145 -194T113 -227T90 -246Q87 -249 86 -250H74Q66 -250 63 -250T58 -247T55 -238Q56 -237 66 -225Q221 -64 221 250T66 725Q56 737 55 738Q55 746 60 749Z"></path></g><g data-mml-node="mo" transform="translate(2156.8, 0)"><path data-c="3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path></g><g data-mml-node="msub" transform="translate(3212.6, 0)"><g data-mml-node="mi"><path data-c="1D436" d="M50 252Q50 367 117 473T286 641T490 704Q580 704 633 653Q642 643 648 636T656 626L657 623Q660 623 684 649Q691 655 699 663T715 679T725 690L740 705H746Q760 705 760 698Q760 694 728 561Q692 422 692 421Q690 416 687 415T669 413H653Q647 419 647 422Q647 423 648 429T650 449T651 481Q651 552 619 605T510 659Q484 659 454 652T382 628T299 572T226 479Q194 422 175 346T156 222Q156 108 232 58Q280 24 350 24Q441 24 512 92T606 240Q610 253 612 255T628 257Q648 257 648 248Q648 243 647 239Q618 132 523 55T319 -22Q206 -22 128 53T50 252Z"></path></g><g data-mml-node="mi" transform="translate(715, -150) scale(0.707)"><path data-c="1D44E" d="M33 157Q33 258 109 349T280 441Q331 441 370 392Q386 422 416 422Q429 422 439 414T449 394Q449 381 412 234T374 68Q374 43 381 35T402 26Q411 27 422 35Q443 55 463 131Q469 151 473 152Q475 153 483 153H487Q506 153 506 144Q506 138 501 117T481 63T449 13Q436 0 417 -8Q409 -10 393 -10Q359 -10 336 5T306 36L300 51Q299 52 296 50Q294 48 292 46Q233 -10 172 -10Q117 -10 75 30T33 157ZM351 328Q351 334 346 350T323 385T277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q217 26 254 59T298 110Q300 114 325 217T351 328Z"></path></g></g></g></g></svg></mjx-container></p>
+<p><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.566ex" xmlns="http://www.w3.org/2000/svg" width="9.459ex" height="2.262ex" role="img" focusable="false" viewBox="0 -750 4180.9 1000"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="1D462" d="M21 287Q21 295 30 318T55 370T99 420T158 442Q204 442 227 417T250 358Q250 340 216 246T182 105Q182 62 196 45T238 27T291 44T328 78L339 95Q341 99 377 247Q407 367 413 387T427 416Q444 431 463 431Q480 431 488 421T496 402L420 84Q419 79 419 68Q419 43 426 35T447 26Q469 29 482 57T512 145Q514 153 532 153Q551 153 551 144Q550 139 549 130T540 98T523 55T498 17T462 -8Q454 -10 438 -10Q372 -10 347 46Q345 45 336 36T318 21T296 6T267 -6T233 -11Q189 -11 155 7Q103 38 103 113Q103 170 138 262T173 379Q173 380 173 381Q173 390 173 393T169 400T158 404H154Q131 404 112 385T82 344T65 302T57 280Q55 278 41 278H27Q21 284 21 287Z"></path></g><g data-mml-node="mo" transform="translate(572, 0)"><path data-c="28" d="M94 250Q94 319 104 381T127 488T164 576T202 643T244 695T277 729T302 750H315H319Q333 750 333 741Q333 738 316 720T275 667T226 581T184 443T167 250T184 58T225 -81T274 -167T316 -220T333 -241Q333 -250 318 -250H315H302L274 -226Q180 -141 137 -14T94 250Z"></path></g><g data-mml-node="mi" transform="translate(961, 0)"><path data-c="1D44F" d="M73 647Q73 657 77 670T89 683Q90 683 161 688T234 694Q246 694 246 685T212 542Q204 508 195 472T180 418L176 399Q176 396 182 402Q231 442 283 442Q345 442 383 396T422 280Q422 169 343 79T173 -11Q123 -11 82 27T40 150V159Q40 180 48 217T97 414Q147 611 147 623T109 637Q104 637 101 637H96Q86 637 83 637T76 640T73 647ZM336 325V331Q336 405 275 405Q258 405 240 397T207 376T181 352T163 330L157 322L136 236Q114 150 114 114Q114 66 138 42Q154 26 178 26Q211 26 245 58Q270 81 285 114T318 219Q336 291 336 325Z"></path></g><g data-mml-node="mo" transform="translate(1390, 0)"><path data-c="29" d="M60 749L64 750Q69 750 74 750H86L114 726Q208 641 251 514T294 250Q294 182 284 119T261 12T224 -76T186 -143T145 -194T113 -227T90 -246Q87 -249 86 -250H74Q66 -250 63 -250T58 -247T55 -238Q56 -237 66 -225Q221 -64 221 250T66 725Q56 737 55 738Q55 746 60 749Z"></path></g><g data-mml-node="mo" transform="translate(2056.8, 0)"><path data-c="3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path></g><g data-mml-node="msub" transform="translate(3112.6, 0)"><g data-mml-node="mi"><path data-c="1D436" d="M50 252Q50 367 117 473T286 641T490 704Q580 704 633 653Q642 643 648 636T656 626L657 623Q660 623 684 649Q691 655 699 663T715 679T725 690L740 705H746Q760 705 760 698Q760 694 728 561Q692 422 692 421Q690 416 687 415T669 413H653Q647 419 647 422Q647 423 648 429T650 449T651 481Q651 552 619 605T510 659Q484 659 454 652T382 628T299 572T226 479Q194 422 175 346T156 222Q156 108 232 58Q280 24 350 24Q441 24 512 92T606 240Q610 253 612 255T628 257Q648 257 648 248Q648 243 647 239Q618 132 523 55T319 -22Q206 -22 128 53T50 252Z"></path></g><g data-mml-node="mi" transform="translate(715, -150) scale(0.707)"><path data-c="1D44F" d="M73 647Q73 657 77 670T89 683Q90 683 161 688T234 694Q246 694 246 685T212 542Q204 508 195 472T180 418L176 399Q176 396 182 402Q231 442 283 442Q345 442 383 396T422 280Q422 169 343 79T173 -11Q123 -11 82 27T40 150V159Q40 180 48 217T97 414Q147 611 147 623T109 637Q104 637 101 637H96Q86 637 83 637T76 640T73 647ZM336 325V331Q336 405 275 405Q258 405 240 397T207 376T181 352T163 330L157 322L136 236Q114 150 114 114Q114 66 138 42Q154 26 178 26Q211 26 245 58Q270 81 285 114T318 219Q336 291 336 325Z"></path></g></g></g></g></svg></mjx-container></p>
+<p>甚至是</p>
+<p><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.566ex" xmlns="http://www.w3.org/2000/svg" width="9.845ex" height="2.262ex" role="img" focusable="false" viewBox="0 -750 4351.6 1000"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="1D462" d="M21 287Q21 295 30 318T55 370T99 420T158 442Q204 442 227 417T250 358Q250 340 216 246T182 105Q182 62 196 45T238 27T291 44T328 78L339 95Q341 99 377 247Q407 367 413 387T427 416Q444 431 463 431Q480 431 488 421T496 402L420 84Q419 79 419 68Q419 43 426 35T447 26Q469 29 482 57T512 145Q514 153 532 153Q551 153 551 144Q550 139 549 130T540 98T523 55T498 17T462 -8Q454 -10 438 -10Q372 -10 347 46Q345 45 336 36T318 21T296 6T267 -6T233 -11Q189 -11 155 7Q103 38 103 113Q103 170 138 262T173 379Q173 380 173 381Q173 390 173 393T169 400T158 404H154Q131 404 112 385T82 344T65 302T57 280Q55 278 41 278H27Q21 284 21 287Z"></path></g><g data-mml-node="mo" transform="translate(572, 0)"><path data-c="28" d="M94 250Q94 319 104 381T127 488T164 576T202 643T244 695T277 729T302 750H315H319Q333 750 333 741Q333 738 316 720T275 667T226 581T184 443T167 250T184 58T225 -81T274 -167T316 -220T333 -241Q333 -250 318 -250H315H302L274 -226Q180 -141 137 -14T94 250Z"></path></g><g data-mml-node="mi" transform="translate(961, 0)"><path data-c="1D44E" d="M33 157Q33 258 109 349T280 441Q331 441 370 392Q386 422 416 422Q429 422 439 414T449 394Q449 381 412 234T374 68Q374 43 381 35T402 26Q411 27 422 35Q443 55 463 131Q469 151 473 152Q475 153 483 153H487Q506 153 506 144Q506 138 501 117T481 63T449 13Q436 0 417 -8Q409 -10 393 -10Q359 -10 336 5T306 36L300 51Q299 52 296 50Q294 48 292 46Q233 -10 172 -10Q117 -10 75 30T33 157ZM351 328Q351 334 346 350T323 385T277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q217 26 254 59T298 110Q300 114 325 217T351 328Z"></path></g><g data-mml-node="mo" transform="translate(1490, 0)"><path data-c="29" d="M60 749L64 750Q69 750 74 750H86L114 726Q208 641 251 514T294 250Q294 182 284 119T261 12T224 -76T186 -143T145 -194T113 -227T90 -246Q87 -249 86 -250H74Q66 -250 63 -250T58 -247T55 -238Q56 -237 66 -225Q221 -64 221 250T66 725Q56 737 55 738Q55 746 60 749Z"></path></g><g data-mml-node="mo" transform="translate(2156.8, 0)"><path data-c="3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path></g><g data-mml-node="msub" transform="translate(3212.6, 0)"><g data-mml-node="mi"><path data-c="1D436" d="M50 252Q50 367 117 473T286 641T490 704Q580 704 633 653Q642 643 648 636T656 626L657 623Q660 623 684 649Q691 655 699 663T715 679T725 690L740 705H746Q760 705 760 698Q760 694 728 561Q692 422 692 421Q690 416 687 415T669 413H653Q647 419 647 422Q647 423 648 429T650 449T651 481Q651 552 619 605T510 659Q484 659 454 652T382 628T299 572T226 479Q194 422 175 346T156 222Q156 108 232 58Q280 24 350 24Q441 24 512 92T606 240Q610 253 612 255T628 257Q648 257 648 248Q648 243 647 239Q618 132 523 55T319 -22Q206 -22 128 53T50 252Z"></path></g><g data-mml-node="mi" transform="translate(715, -150) scale(0.707)"><path data-c="1D44E" d="M33 157Q33 258 109 349T280 441Q331 441 370 392Q386 422 416 422Q429 422 439 414T449 394Q449 381 412 234T374 68Q374 43 381 35T402 26Q411 27 422 35Q443 55 463 131Q469 151 473 152Q475 153 483 153H487Q506 153 506 144Q506 138 501 117T481 63T449 13Q436 0 417 -8Q409 -10 393 -10Q359 -10 336 5T306 36L300 51Q299 52 296 50Q294 48 292 46Q233 -10 172 -10Q117 -10 75 30T33 157ZM351 328Q351 334 346 350T323 385T277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q217 26 254 59T298 110Q300 114 325 217T351 328Z"></path></g></g></g></g></svg></mjx-container></p>
+<p><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.566ex" xmlns="http://www.w3.org/2000/svg" width="10.012ex" height="2.283ex" role="img" focusable="false" viewBox="0 -759 4425.4 1009"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><g data-mml-node="math"><g data-mml-node="msup"><g data-mml-node="mi"><path data-c="1D462" d="M21 287Q21 295 30 318T55 370T99 420T158 442Q204 442 227 417T250 358Q250 340 216 246T182 105Q182 62 196 45T238 27T291 44T328 78L339 95Q341 99 377 247Q407 367 413 387T427 416Q444 431 463 431Q480 431 488 421T496 402L420 84Q419 79 419 68Q419 43 426 35T447 26Q469 29 482 57T512 145Q514 153 532 153Q551 153 551 144Q550 139 549 130T540 98T523 55T498 17T462 -8Q454 -10 438 -10Q372 -10 347 46Q345 45 336 36T318 21T296 6T267 -6T233 -11Q189 -11 155 7Q103 38 103 113Q103 170 138 262T173 379Q173 380 173 381Q173 390 173 393T169 400T158 404H154Q131 404 112 385T82 344T65 302T57 280Q55 278 41 278H27Q21 284 21 287Z"></path></g><g data-mml-node="mo" transform="translate(572, 363) scale(0.707)"><path data-c="2032" d="M79 43Q73 43 52 49T30 61Q30 68 85 293T146 528Q161 560 198 560Q218 560 240 545T262 501Q262 496 260 486Q259 479 173 263T84 45T79 43Z"></path></g></g><g data-mml-node="mo" transform="translate(816.5, 0)"><path data-c="28" d="M94 250Q94 319 104 381T127 488T164 576T202 643T244 695T277 729T302 750H315H319Q333 750 333 741Q333 738 316 720T275 667T226 581T184 443T167 250T184 58T225 -81T274 -167T316 -220T333 -241Q333 -250 318 -250H315H302L274 -226Q180 -141 137 -14T94 250Z"></path></g><g data-mml-node="mi" transform="translate(1205.5, 0)"><path data-c="1D44F" d="M73 647Q73 657 77 670T89 683Q90 683 161 688T234 694Q246 694 246 685T212 542Q204 508 195 472T180 418L176 399Q176 396 182 402Q231 442 283 442Q345 442 383 396T422 280Q422 169 343 79T173 -11Q123 -11 82 27T40 150V159Q40 180 48 217T97 414Q147 611 147 623T109 637Q104 637 101 637H96Q86 637 83 637T76 640T73 647ZM336 325V331Q336 405 275 405Q258 405 240 397T207 376T181 352T163 330L157 322L136 236Q114 150 114 114Q114 66 138 42Q154 26 178 26Q211 26 245 58Q270 81 285 114T318 219Q336 291 336 325Z"></path></g><g data-mml-node="mo" transform="translate(1634.5, 0)"><path data-c="29" d="M60 749L64 750Q69 750 74 750H86L114 726Q208 641 251 514T294 250Q294 182 284 119T261 12T224 -76T186 -143T145 -194T113 -227T90 -246Q87 -249 86 -250H74Q66 -250 63 -250T58 -247T55 -238Q56 -237 66 -225Q221 -64 221 250T66 725Q56 737 55 738Q55 746 60 749Z"></path></g><g data-mml-node="mo" transform="translate(2301.2, 0)"><path data-c="3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path></g><g data-mml-node="msub" transform="translate(3357, 0)"><g data-mml-node="mi"><path data-c="1D436" d="M50 252Q50 367 117 473T286 641T490 704Q580 704 633 653Q642 643 648 636T656 626L657 623Q660 623 684 649Q691 655 699 663T715 679T725 690L740 705H746Q760 705 760 698Q760 694 728 561Q692 422 692 421Q690 416 687 415T669 413H653Q647 419 647 422Q647 423 648 429T650 449T651 481Q651 552 619 605T510 659Q484 659 454 652T382 628T299 572T226 479Q194 422 175 346T156 222Q156 108 232 58Q280 24 350 24Q441 24 512 92T606 240Q610 253 612 255T628 257Q648 257 648 248Q648 243 647 239Q618 132 523 55T319 -22Q206 -22 128 53T50 252Z"></path></g><g data-mml-node="mi" transform="translate(715, -150) scale(0.707)"><path data-c="1D44F" d="M73 647Q73 657 77 670T89 683Q90 683 161 688T234 694Q246 694 246 685T212 542Q204 508 195 472T180 418L176 399Q176 396 182 402Q231 442 283 442Q345 442 383 396T422 280Q422 169 343 79T173 -11Q123 -11 82 27T40 150V159Q40 180 48 217T97 414Q147 611 147 623T109 637Q104 637 101 637H96Q86 637 83 637T76 640T73 647ZM336 325V331Q336 405 275 405Q258 405 240 397T207 376T181 352T163 330L157 322L136 236Q114 150 114 114Q114 66 138 42Q154 26 178 26Q211 26 245 58Q270 81 285 114T318 219Q336 291 336 325Z"></path></g></g></g></g></svg></mjx-container></p>
 
       
     </div>
@@ -376,7 +685,7 @@ mjx-container[display="true"] + br {
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-04-16 17:25:41" itemprop="dateModified" datetime="2021-04-16T17:25:41+08:00">2021-04-16</time>
+        <time title="修改时间：2021-04-20 10:09:40" itemprop="dateModified" datetime="2021-04-20T10:09:40+08:00">2021-04-20</time>
       </span>
 
   
@@ -451,7 +760,7 @@ mjx-container[display="true"] + br {
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-04-16 17:25:41" itemprop="dateModified" datetime="2021-04-16T17:25:41+08:00">2021-04-16</time>
+        <time title="修改时间：2021-04-20 10:09:40" itemprop="dateModified" datetime="2021-04-20T10:09:40+08:00">2021-04-20</time>
       </span>
 
   
@@ -522,7 +831,7 @@ mjx-container[display="true"] + br {
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-04-16 17:25:41" itemprop="dateModified" datetime="2021-04-16T17:25:41+08:00">2021-04-16</time>
+        <time title="修改时间：2021-04-20 10:09:40" itemprop="dateModified" datetime="2021-04-20T10:09:40+08:00">2021-04-20</time>
       </span>
 
   
@@ -592,7 +901,7 @@ mjx-container[display="true"] + br {
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-04-16 17:25:41" itemprop="dateModified" datetime="2021-04-16T17:25:41+08:00">2021-04-16</time>
+        <time title="修改时间：2021-04-20 10:09:40" itemprop="dateModified" datetime="2021-04-20T10:09:40+08:00">2021-04-20</time>
       </span>
 
   
@@ -1101,7 +1410,7 @@ mjx-container[display="true"] + br {
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-04-16 17:25:41" itemprop="dateModified" datetime="2021-04-16T17:25:41+08:00">2021-04-16</time>
+        <time title="修改时间：2021-04-20 10:09:40" itemprop="dateModified" datetime="2021-04-20T10:09:40+08:00">2021-04-20</time>
       </span>
 
   
@@ -1120,305 +1429,6 @@ mjx-container[display="true"] + br {
 <figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br></pre></td><td class="code"><pre><span class="line">&quot;latex-workshop.latex.tools&quot;: [</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="attr">&quot;name&quot;</span>: <span class="string">&quot;xelatex&quot;</span>,</span><br><span class="line">		<span class="attr">&quot;command&quot;</span>: <span class="string">&quot;xelatex&quot;</span>,</span><br><span class="line">		<span class="attr">&quot;args&quot;</span>: [</span><br><span class="line">			<span class="string">&quot;-synctex=1&quot;</span>,</span><br><span class="line">			<span class="string">&quot;-interaction=nonstopmode&quot;</span>,</span><br><span class="line">			<span class="string">&quot;-file-line-error&quot;</span>,</span><br><span class="line">			<span class="string">&quot;%DOCFILE%&quot;</span></span><br><span class="line">		]</span><br><span class="line">	&#125;,</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="attr">&quot;name&quot;</span>: <span class="string">&quot;pdflatex&quot;</span>,</span><br><span class="line">		<span class="attr">&quot;command&quot;</span>: <span class="string">&quot;pdflatex&quot;</span>,</span><br><span class="line">		<span class="attr">&quot;args&quot;</span>: [</span><br><span class="line">			<span class="string">&quot;-synctex=1&quot;</span>,</span><br><span class="line">			<span class="string">&quot;-interaction=nonstopmode&quot;</span>,</span><br><span class="line">			<span class="string">&quot;-file-line-error&quot;</span>,</span><br><span class="line">			<span class="string">&quot;%DOCFILE%&quot;</span></span><br><span class="line">		]</span><br><span class="line">	&#125;,</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="attr">&quot;name&quot;</span>: <span class="string">&quot;bibtex&quot;</span>,</span><br><span class="line">		<span class="attr">&quot;command&quot;</span>: <span class="string">&quot;bibtex&quot;</span>,</span><br><span class="line">		<span class="attr">&quot;args&quot;</span>: [</span><br><span class="line">			<span class="string">&quot;%DOCFILE%&quot;</span></span><br><span class="line">		]</span><br><span class="line">	&#125;</span><br><span class="line">],</span><br><span class="line"></span><br><span class="line">&quot;latex-workshop.latex.recipes&quot;: [</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="attr">&quot;name&quot;</span>: <span class="string">&quot;xelatex&quot;</span>,</span><br><span class="line">		<span class="attr">&quot;tools&quot;</span>: [</span><br><span class="line">			<span class="string">&quot;xelatex&quot;</span></span><br><span class="line">		],</span><br><span class="line">	&#125;,</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="attr">&quot;name&quot;</span>: <span class="string">&quot;pdflatex&quot;</span>,</span><br><span class="line">		<span class="attr">&quot;tools&quot;</span>: [</span><br><span class="line">			<span class="string">&quot;pdflatex&quot;</span></span><br><span class="line">		]</span><br><span class="line">	&#125;,</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="attr">&quot;name&quot;</span>: <span class="string">&quot;xe-&gt;bib-&gt;xe-&gt;xe&quot;</span>,</span><br><span class="line">		<span class="attr">&quot;tools&quot;</span>: [</span><br><span class="line">			<span class="string">&quot;xelatex&quot;</span>,</span><br><span class="line">			<span class="string">&quot;bibtex&quot;</span>,</span><br><span class="line">			<span class="string">&quot;xelatex&quot;</span>,</span><br><span class="line">			<span class="string">&quot;xelatex&quot;</span></span><br><span class="line">		]</span><br><span class="line">	&#125;,</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="attr">&quot;name&quot;</span>: <span class="string">&quot;pdf-&gt;bib-&gt;pdf-&gt;pdf&quot;</span>,</span><br><span class="line">		<span class="attr">&quot;tools&quot;</span>: [</span><br><span class="line">			<span class="string">&quot;pdflatex&quot;</span>,</span><br><span class="line">			<span class="string">&quot;bibtex&quot;</span>,</span><br><span class="line">			<span class="string">&quot;pdflatex&quot;</span>,</span><br><span class="line">			<span class="string">&quot;pdflatex&quot;</span></span><br><span class="line">		]</span><br><span class="line">	&#125;</span><br><span class="line">],</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 <p>以上代码取自<a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_21567385/article/details/106943325">vscode写LaTex教程</a></p>
 <h1 id="第三步-多次重启"><a href="#第三步-多次重启" class="headerlink" title="第三步 多次重启"></a>第三步 多次重启</h1>
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://lblk.github.io/2021/04/06/rcore_chapter2/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="1642264706@qq.com">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="流放lblk的小岛">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/04/06/rcore_chapter2/" class="post-title-link" itemprop="url">rcore_chpter2</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-
-      <time title="创建时间：2021-04-06 21:28:45" itemprop="dateCreated datePublished" datetime="2021-04-06T21:28:45+08:00">2021-04-06</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-04-16 17:25:41" itemprop="dateModified" datetime="2021-04-16T17:25:41+08:00">2021-04-16</time>
-      </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h1 id="1-操作系统的API"><a href="#1-操作系统的API" class="headerlink" title="1.操作系统的API"></a>1.操作系统的API</h1><h2 id="进程管理"><a href="#进程管理" class="headerlink" title="进程管理"></a>进程管理</h2><h3 id="执行进程"><a href="#执行进程" class="headerlink" title="执行进程"></a>执行进程</h3><h3 id="复制创建进程"><a href="#复制创建进程" class="headerlink" title="复制创建进程"></a>复制创建进程</h3><h3 id="退出进程"><a href="#退出进程" class="headerlink" title="退出进程"></a>退出进程</h3><h2 id="进程间通信"><a href="#进程间通信" class="headerlink" title="进程间通信"></a>进程间通信</h2><h3 id="管道"><a href="#管道" class="headerlink" title="管道"></a>管道</h3><h3 id="信号"><a href="#信号" class="headerlink" title="信号"></a>信号</h3><h3 id="事件"><a href="#事件" class="headerlink" title="事件"></a>事件</h3><h2 id="并发控制"><a href="#并发控制" class="headerlink" title="并发控制"></a>并发控制</h2><h3 id="信号量"><a href="#信号量" class="headerlink" title="信号量"></a>信号量</h3><h3 id="管程"><a href="#管程" class="headerlink" title="管程"></a>管程</h3><h3 id="条件变量"><a href="#条件变量" class="headerlink" title="条件变量"></a>条件变量</h3><h2 id="虚拟内存"><a href="#虚拟内存" class="headerlink" title="虚拟内存"></a>虚拟内存</h2><h3 id="内存空间映射"><a href="#内存空间映射" class="headerlink" title="内存空间映射"></a>内存空间映射</h3><h3 id="改变数据地址空间大小"><a href="#改变数据地址空间大小" class="headerlink" title="改变数据地址空间大小"></a>改变数据地址空间大小</h3><h3 id="共享内存"><a href="#共享内存" class="headerlink" title="共享内存"></a>共享内存</h3><h2 id="文件I-O操作"><a href="#文件I-O操作" class="headerlink" title="文件I/O操作"></a>文件I/O操作</h2><h3 id="读"><a href="#读" class="headerlink" title="读"></a>读</h3><h3 id="写"><a href="#写" class="headerlink" title="写"></a>写</h3><h3 id="打开"><a href="#打开" class="headerlink" title="打开"></a>打开</h3><h3 id="关闭"><a href="#关闭" class="headerlink" title="关闭"></a>关闭</h3><h2 id="外设I-O操作"><a href="#外设I-O操作" class="headerlink" title="外设I/O操作"></a>外设I/O操作</h2><h3 id="键盘-显示器-串口-磁盘-时钟"><a href="#键盘-显示器-串口-磁盘-时钟" class="headerlink" title="键盘/显示器/串口/磁盘/时钟"></a>键盘/显示器/串口/磁盘/时钟</h3>
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://lblk.github.io/2021/04/06/rcore_chapter1/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="1642264706@qq.com">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="流放lblk的小岛">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/04/06/rcore_chapter1/" class="post-title-link" itemprop="url">rcore_chap1</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-
-      <time title="创建时间：2021-04-06 21:28:45" itemprop="dateCreated datePublished" datetime="2021-04-06T21:28:45+08:00">2021-04-06</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-04-16 17:25:41" itemprop="dateModified" datetime="2021-04-16T17:25:41+08:00">2021-04-16</time>
-      </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h1 id="0-中断Intro"><a href="#0-中断Intro" class="headerlink" title="0.中断Intro"></a>0.中断Intro</h1><h2 id="0-1-指令级别"><a href="#0-1-指令级别" class="headerlink" title="0.1 指令级别"></a>0.1 指令级别</h2><h3 id="0-1-1机器态"><a href="#0-1-1机器态" class="headerlink" title="0.1.1机器态"></a>0.1.1机器态</h3><h3 id="0-1-2内核态"><a href="#0-1-2内核态" class="headerlink" title="0.1.2内核态"></a>0.1.2内核态</h3><h2 id="0-2-中断类型"><a href="#0-2-中断类型" class="headerlink" title="0.2 中断类型"></a>0.2 中断类型</h2><h3 id="0-2-1-异常"><a href="#0-2-1-异常" class="headerlink" title="0.2.1 异常"></a>0.2.1 异常</h3><h3 id="0-2-2-陷阱"><a href="#0-2-2-陷阱" class="headerlink" title="0.2.2 陷阱"></a>0.2.2 陷阱</h3><h3 id="0-2-3-硬件中断"><a href="#0-2-3-硬件中断" class="headerlink" title="0.2.3 硬件中断"></a>0.2.3 硬件中断</h3><h1 id="1-寄存器"><a href="#1-寄存器" class="headerlink" title="1.寄存器"></a>1.寄存器</h1><h2 id="1-1硬件填写的指令"><a href="#1-1硬件填写的指令" class="headerlink" title="1.1硬件填写的指令"></a>1.1硬件填写的指令</h2><h3 id="1-1-1-spec"><a href="#1-1-1-spec" class="headerlink" title="1.1.1 spec"></a>1.1.1 spec</h3><h3 id="1-1-2-scause"><a href="#1-1-2-scause" class="headerlink" title="1.1.2 scause"></a>1.1.2 scause</h3><h3 id="1-1-3-stval"><a href="#1-1-3-stval" class="headerlink" title="1.1.3 stval"></a>1.1.3 stval</h3><h2 id="1-2指导中断处理的指令"><a href="#1-2指导中断处理的指令" class="headerlink" title="1.2指导中断处理的指令"></a>1.2指导中断处理的指令</h2><h3 id="1-2-1-stvec"><a href="#1-2-1-stvec" class="headerlink" title="1.2.1 stvec"></a>1.2.1 stvec</h3><h3 id="1-2-2-sstatus"><a href="#1-2-2-sstatus" class="headerlink" title="1.2.2 sstatus"></a>1.2.2 sstatus</h3><h3 id="1-2-3-sie"><a href="#1-2-3-sie" class="headerlink" title="1.2.3 sie"></a>1.2.3 sie</h3><h3 id="1-2-4-sip"><a href="#1-2-4-sip" class="headerlink" title="1.2.4 sip"></a>1.2.4 sip</h3><h2 id="1-3-sscratch"><a href="#1-3-sscratch" class="headerlink" title="1.3 sscratch"></a>1.3 sscratch</h2><h1 id="2-中断汇编指令"><a href="#2-中断汇编指令" class="headerlink" title="2.中断汇编指令"></a>2.中断汇编指令</h1><h2 id="Call"><a href="#Call" class="headerlink" title="Call"></a>Call</h2><h2 id="sret"><a href="#sret" class="headerlink" title="sret"></a>sret</h2><h2 id="ebreak"><a href="#ebreak" class="headerlink" title="ebreak"></a>ebreak</h2><h2 id="mret"><a href="#mret" class="headerlink" title="mret"></a>mret</h2><h1 id="3-CSR指令"><a href="#3-CSR指令" class="headerlink" title="3.CSR指令"></a>3.CSR指令</h1><h2 id=""><a href="#" class="headerlink" title=""></a></h2><h2 id="-1"><a href="#-1" class="headerlink" title=""></a></h2><h2 id="-2"><a href="#-2" class="headerlink" title=""></a></h2><h2 id="-3"><a href="#-3" class="headerlink" title=""></a></h2><h2 id="csrs-i-car-cs"><a href="#csrs-i-car-cs" class="headerlink" title="csrs(i) car, cs"></a>csrs(i) car, cs</h2>
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://lblk.github.io/2021/04/04/rcore-chapter3/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="1642264706@qq.com">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="流放lblk的小岛">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/04/04/rcore-chapter3/" class="post-title-link" itemprop="url">rcore_chapter3</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-
-      <time title="创建时间：2021-04-04 21:28:45" itemprop="dateCreated datePublished" datetime="2021-04-04T21:28:45+08:00">2021-04-04</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-04-16 17:25:41" itemprop="dateModified" datetime="2021-04-16T17:25:41+08:00">2021-04-16</time>
-      </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h1 id="程序三步"><a href="#程序三步" class="headerlink" title="程序三步"></a>程序三步</h1><h2 id="编译为-o-obj"><a href="#编译为-o-obj" class="headerlink" title="编译为.o/.obj"></a>编译为.o/.obj</h2><h2 id="打包为库-a-lib"><a href="#打包为库-a-lib" class="headerlink" title="打包为库.a/.lib"></a>打包为库.a/.lib</h2><h2 id="链接为-exe"><a href="#链接为-exe" class="headerlink" title="链接为.exe"></a>链接为.exe</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">graph TD</span><br><span class="line">A[make] --&gt; C&#123;检查各文件是否编译过&#125;</span><br><span class="line">    C --&gt; |编译过| D[跳过编译]</span><br><span class="line">    C --&gt; |改动过或未编译| E[编译]</span><br><span class="line">    </span><br></pre></td></tr></table></figure>
-
-<h1 id="makefile规则："><a href="#makefile规则：" class="headerlink" title="makefile规则："></a>makefile规则：</h1><figure class="highlight makefile"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="section">target:prerequisites</span></span><br><span class="line">	command</span><br><span class="line"><span class="comment">#target可以是 目标文件/Object File/Label(伪目标)</span></span><br><span class="line"><span class="comment">#prerequisites依赖项</span></span><br><span class="line"><span class="comment">#command：命令，命令前应有1 tab缩进</span></span><br></pre></td></tr></table></figure>
-
-<h1 id="makefile变量"><a href="#makefile变量" class="headerlink" title="makefile变量"></a>makefile变量</h1><h2 id="奇变量"><a href="#奇变量" class="headerlink" title="奇变量"></a>奇变量</h2><h3 id=""><a href="#" class="headerlink" title="$@"></a>$@</h3><p>目标文件</p>
-<h3 id="-1"><a href="#-1" class="headerlink" title="$^"></a>$^</h3><p>所有的依赖文件</p>
-<h3 id="lt"><a href="#lt" class="headerlink" title="$&lt;"></a>$&lt;</h3><p>第一个依赖文件</p>
-<h1 id="makefile推导"><a href="#makefile推导" class="headerlink" title="makefile推导"></a>makefile推导</h1><h2 id="隐晦规则"><a href="#隐晦规则" class="headerlink" title="隐晦规则"></a>隐晦规则</h2><h2 id="伪目标文件"><a href="#伪目标文件" class="headerlink" title="伪目标文件"></a>伪目标文件</h2><h1 id="makefile组成"><a href="#makefile组成" class="headerlink" title="makefile组成"></a>makefile组成</h1><h2 id="1-显式规则"><a href="#1-显式规则" class="headerlink" title="1.显式规则"></a>1.显式规则</h2><h2 id="2-隐晦规则"><a href="#2-隐晦规则" class="headerlink" title="2.隐晦规则"></a>2.隐晦规则</h2><h2 id="3-变量定义"><a href="#3-变量定义" class="headerlink" title="3.变量定义"></a>3.变量定义</h2><h2 id="4-文件指示"><a href="#4-文件指示" class="headerlink" title="4.文件指示"></a>4.文件指示</h2><h2 id="5-注释"><a href="#5-注释" class="headerlink" title="5.注释"></a>5.注释</h2><h2 id="Ps"><a href="#Ps" class="headerlink" title="Ps"></a>Ps</h2><p>最后，还值得一提的是，在Makefile中的命令，必须要以[Tab]键开始。</p>
-<h2 id="makefile文件名"><a href="#makefile文件名" class="headerlink" title="makefile文件名"></a>makefile文件名</h2><p>大多数的make都支持“<strong>makefile”和“Makefile”</strong>这两种默认文件名。</p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://lblk.github.io/2021/04/02/rcore2/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="1642264706@qq.com">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="流放lblk的小岛">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/04/02/rcore2/" class="post-title-link" itemprop="url">rcore第二章知识点</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-
-      <time title="创建时间：2021-04-02 21:28:45" itemprop="dateCreated datePublished" datetime="2021-04-02T21:28:45+08:00">2021-04-02</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-04-16 17:25:41" itemprop="dateModified" datetime="2021-04-16T17:25:41+08:00">2021-04-16</time>
-      </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h1 id="1-移除os依赖"><a href="#1-移除os依赖" class="headerlink" title="1.移除os依赖"></a>1.移除os依赖</h1><h2 id="1-1移除std"><a href="#1-1移除std" class="headerlink" title="1.1移除std"></a>1.1移除std</h2><h2 id="1-2接手std工作"><a href="#1-2接手std工作" class="headerlink" title="1.2接手std工作"></a>1.2接手std工作</h2><h3 id="1-2-1接手panic"><a href="#1-2-1接手panic" class="headerlink" title="1.2.1接手panic"></a>1.2.1接手panic</h3><p>​                            =”abort”</p>
-<h4 id="1-2-1-1panic-handler-gt-loop"><a href="#1-2-1-1panic-handler-gt-loop" class="headerlink" title="1.2.1.1panic_handler -> loop{};"></a>1.2.1.1panic_handler -&gt; loop{};</h4><h4 id="1-2-1-2eh-personality"><a href="#1-2-1-2eh-personality" class="headerlink" title="1.2.1.2eh_personality"></a>1.2.1.2eh_personality</h4><h5 id="1-2-1-2-1堆栈展开"><a href="#1-2-1-2-1堆栈展开" class="headerlink" title="1.2.1.2.1堆栈展开"></a>1.2.1.2.1堆栈展开</h5><h3 id="1-2-2接手入口点"><a href="#1-2-2接手入口点" class="headerlink" title="1.2.2接手入口点"></a>1.2.2接手入口点</h3><h4 id="1-2-2-1c入口点"><a href="#1-2-2-1c入口点" class="headerlink" title="1.2.2.1c入口点"></a>1.2.2.1c入口点</h4><h4 id="1-2-2-2原main入口点"><a href="#1-2-2-2原main入口点" class="headerlink" title="1.2.2.2原main入口点"></a>1.2.2.2原main入口点</h4><h2 id="1-3用编译命令禁用原c入口点"><a href="#1-3用编译命令禁用原c入口点" class="headerlink" title="1.3用编译命令禁用原c入口点"></a>1.3用编译命令禁用原c入口点</h2><h1 id="2-目标三元组"><a href="#2-目标三元组" class="headerlink" title="2.目标三元组"></a>2.目标三元组</h1><h2 id="2-1-cpu架构"><a href="#2-1-cpu架构" class="headerlink" title="2.1 cpu架构"></a>2.1 cpu架构</h2><h2 id="2-2-供应商"><a href="#2-2-供应商" class="headerlink" title="2.2 供应商"></a>2.2 供应商</h2><h2 id="2-3-操作系统"><a href="#2-3-操作系统" class="headerlink" title="2.3 操作系统"></a>2.3 操作系统</h2><h2 id="2-4-ABI"><a href="#2-4-ABI" class="headerlink" title="2.4 ABI"></a>2.4 ABI</h2><h1 id="3-使用给定三元组（riscv64）编译项目为内核镜像"><a href="#3-使用给定三元组（riscv64）编译项目为内核镜像" class="headerlink" title="3. 使用给定三元组（riscv64）编译项目为内核镜像"></a>3. 使用给定三元组（riscv64）编译项目为内核镜像</h1><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ cargo build --target riscv64imac-unknown-none-elf</span><br></pre></td></tr></table></figure>
-<h2 id="3-1-安装core"><a href="#3-1-安装core" class="headerlink" title="3.1 安装core"></a>3.1 安装core</h2><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ rustup target add riscv64imac-unknown-none-elf</span><br></pre></td></tr></table></figure>
-<h2 id="3-2-配置目标三元组进入-cargo-config"><a href="#3-2-配置目标三元组进入-cargo-config" class="headerlink" title="3.2 配置目标三元组进入 #.cargo/config"></a>3.2 配置目标三元组进入 #.cargo/config</h2><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ cargo install cargo-binutils</span><br><span class="line">$ rustup component add llvm-tools-preview</span><br></pre></td></tr></table></figure>
-<h2 id="3-3安装「objdump、objcopy」-in-biuntils工具集"><a href="#3-3安装「objdump、objcopy」-in-biuntils工具集" class="headerlink" title="3.3安装「objdump、objcopy」 $\in$ biuntils工具集"></a>3.3安装「objdump、objcopy」 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.09ex" xmlns="http://www.w3.org/2000/svg" width="1.509ex" height="1.312ex" role="img" focusable="false" viewBox="0 -540 667 580"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><g data-mml-node="math"><g data-mml-node="mo"><path data-c="2208" d="M84 250Q84 372 166 450T360 539Q361 539 377 539T419 540T469 540H568Q583 532 583 520Q583 511 570 501L466 500Q355 499 329 494Q280 482 242 458T183 409T147 354T129 306T124 272V270H568Q583 262 583 250T568 230H124V228Q124 207 134 177T167 112T231 48T328 7Q355 1 466 0H570Q583 -10 583 -20Q583 -32 568 -40H471Q464 -40 446 -40T417 -41Q262 -41 172 45Q84 127 84 250Z"></path></g></g></g></svg></mjx-container> biuntils工具集</h2><h2 id="3-4编译生成64位ELF文件"><a href="#3-4编译生成64位ELF文件" class="headerlink" title="3.4编译生成64位ELF文件"></a>3.4编译生成64位ELF文件</h2><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ cargo build --target riscv64imac-unknown-none-elf</span><br></pre></td></tr></table></figure>
-<h2 id="3-5由ELF文件生成内核镜像"><a href="#3-5由ELF文件生成内核镜像" class="headerlink" title="3.5由ELF文件生成内核镜像"></a>3.5由ELF文件生成内核镜像</h2><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ rust-objcopy target/riscv64imac-unknown-none-elf/debug/os --strip-all -O binary target/riscv64imac-unknown-none-elf/debug/kernel.bin</span><br></pre></td></tr></table></figure>
-
-<h1 id="4-使用链接脚本"><a href="#4-使用链接脚本" class="headerlink" title="4. 使用链接脚本"></a>4. 使用链接脚本</h1><h2 id="4-1链接脚本的编写"><a href="#4-1链接脚本的编写" class="headerlink" title="4.1链接脚本的编写"></a>4.1链接脚本的编写</h2><h2 id="4-2链接脚本加入-cargo-config配置"><a href="#4-2链接脚本加入-cargo-config配置" class="headerlink" title="4.2链接脚本加入.cargo/config配置"></a>4.2链接脚本加入.cargo/config配置</h2><h2 id="4-3跑起来"><a href="#4-3跑起来" class="headerlink" title="4.3跑起来"></a>4.3跑起来</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ cargo build</span><br><span class="line">$ rust-objdump target/riscv64imac-unknown-none-elf/debug/os -h --arch-name=riscv64</span><br><span class="line">$ rust-objdump target/riscv64imac-unknown-none-elf/debug/os -d --arch-name=riscv64</span><br></pre></td></tr></table></figure>
-
-<h1 id="5-重写程序入口"><a href="#5-重写程序入口" class="headerlink" title="5.重写程序入口"></a>5.重写程序入口</h1><h2 id="5-1用汇编编写-start"><a href="#5-1用汇编编写-start" class="headerlink" title="5.1用汇编编写_start"></a>5.1用汇编编写_start</h2><h2 id="5-2用rust-main接管-start"><a href="#5-2用rust-main接管-start" class="headerlink" title="5.2用rust_main接管_start"></a>5.2用rust_main接管_start</h2><h1 id="6-Qemu降临"><a href="#6-Qemu降临" class="headerlink" title="6.Qemu降临"></a>6.Qemu降临</h1><h2 id="6-1-qemu-concept-Intro"><a href="#6-1-qemu-concept-Intro" class="headerlink" title="6.1 qemu_concept_Intro"></a>6.1 qemu_concept_Intro</h2><h2 id="6-2-复杂的qemu-内核加载"><a href="#6-2-复杂的qemu-内核加载" class="headerlink" title="6.2 复杂的qemu-内核加载"></a>6.2 复杂的qemu-内核加载</h2><h1 id="7-为open-SBI的使用而重构一切"><a href="#7-为open-SBI的使用而重构一切" class="headerlink" title="7.为open_SBI的使用而重构一切"></a>7.为open_SBI的使用而重构一切</h1><h1 id="8-自己动手写println"><a href="#8-自己动手写println" class="headerlink" title="8.自己动手写println!()"></a>8.自己动手写println!()</h1><p>第一次为他人而非自己提供接口！</p>
-
       
     </div>
 

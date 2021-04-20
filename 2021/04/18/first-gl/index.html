@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css">
+
+<meta name="hexo-config" content="{&quot;hostname&quot;:&quot;lblk.github.io&quot;,&quot;root&quot;:&quot;/&quot;,&quot;images&quot;:&quot;/images&quot;,&quot;scheme&quot;:&quot;Muse&quot;,&quot;version&quot;:&quot;8.3.0&quot;,&quot;exturl&quot;:false,&quot;sidebar&quot;:{&quot;position&quot;:&quot;left&quot;,&quot;display&quot;:&quot;post&quot;,&quot;padding&quot;:18,&quot;offset&quot;:12},&quot;copycode&quot;:false,&quot;bookmark&quot;:{&quot;enable&quot;:false,&quot;color&quot;:&quot;#222&quot;,&quot;save&quot;:&quot;auto&quot;},&quot;fancybox&quot;:false,&quot;mediumzoom&quot;:false,&quot;lazyload&quot;:false,&quot;pangu&quot;:false,&quot;comments&quot;:{&quot;style&quot;:&quot;tabs&quot;,&quot;active&quot;:&quot;gitalk&quot;,&quot;storage&quot;:true,&quot;lazyload&quot;:false,&quot;nav&quot;:null,&quot;activeClass&quot;:&quot;gitalk&quot;},&quot;motion&quot;:{&quot;enable&quot;:true,&quot;async&quot;:false,&quot;transition&quot;:{&quot;post_block&quot;:&quot;fadeIn&quot;,&quot;post_header&quot;:&quot;fadeInDown&quot;,&quot;post_body&quot;:&quot;fadeInDown&quot;,&quot;coll_header&quot;:&quot;fadeInLeft&quot;,&quot;sidebar&quot;:&quot;fadeInUp&quot;}},&quot;prism&quot;:false,&quot;i18n&quot;:{&quot;placeholder&quot;:&quot;搜索...&quot;,&quot;empty&quot;:&quot;没有找到任何搜索结果：${query}&quot;,&quot;hits_time&quot;:&quot;找到 ${hits} 个搜索结果（用时 ${time} 毫秒）&quot;,&quot;hits&quot;:&quot;找到 ${hits} 个搜索结果&quot;}}">
+<meta name="description" content="12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686970717273747576777879808182838485868788899091929394959697989910010110210">
+<meta property="og:type" content="article">
+<meta property="og:title" content="first_gl">
+<meta property="og:url" content="https://lblk.github.io/2021/04/18/first-gl/index.html">
+<meta property="og:site_name" content="流放lblk的小岛">
+<meta property="og:description" content="12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686970717273747576777879808182838485868788899091929394959697989910010110210">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2021-04-18T10:25:58.000Z">
+<meta property="article:modified_time" content="2021-04-20T02:09:40.529Z">
+<meta property="article:author" content="1642264706@qq.com">
+<meta property="article:tag" content="ML,DL,RL,NLP,EEG,Security,Finance,Math">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="https://lblk.github.io/2021/04/18/first-gl/">
+
+
+
+<meta name="hexo-config-page" content="{&quot;sidebar&quot;:&quot;&quot;,&quot;isHome&quot;:false,&quot;isPost&quot;:true,&quot;lang&quot;:&quot;zh-CN&quot;}">
+<meta name="hexo-config-calendar" content="">
+<script data-pjax src="/js/load-config.js"></script>
+  <title>first_gl | 流放lblk的小岛</title>
+  
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">流放lblk的小岛</h1>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%BC%93%E5%86%B2%E5%AF%B9%E8%B1%A1%E7%B1%BB%E5%9E%8B"><span class="nav-number">1.</span> <span class="nav-text">缓冲对象类型</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%9D%80%E8%89%B2%E5%99%A8"><span class="nav-number">2.</span> <span class="nav-text">着色器</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%9D%80%E8%89%B2%E5%99%A8%E7%9A%84%E5%88%9B%E5%BB%BA"><span class="nav-number">2.1.</span> <span class="nav-text">着色器的创建</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%9D%80%E8%89%B2%E5%99%A8%E7%9A%84%E7%BB%84%E5%90%88"><span class="nav-number">2.2.</span> <span class="nav-text">着色器的组合</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%B4%A2%E5%BC%95%E7%BC%93%E5%86%B2%E5%AF%B9%E8%B1%A1"><span class="nav-number">3.</span> <span class="nav-text">索引缓冲对象</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">1642264706@qq.com</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives">
+          <span class="site-state-item-count">17</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+  </nav>
+</div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://lblk.github.io/2021/04/18/first-gl/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="1642264706@qq.com">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="流放lblk的小岛">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          first_gl
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2021-04-18 18:25:58" itemprop="dateCreated datePublished" datetime="2021-04-18T18:25:58+08:00">2021-04-18</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2021-04-20 10:09:40" itemprop="dateModified" datetime="2021-04-20T10:09:40+08:00">2021-04-20</time>
+      </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//</span></span><br><span class="line"><span class="comment">//  main.cpp</span></span><br><span class="line"><span class="comment">//  opengl</span></span><br><span class="line"><span class="comment">//</span></span><br><span class="line"><span class="comment">//  Created by hay on 2018/3/6.</span></span><br><span class="line"><span class="comment">//  Copyright © 2018年 hay. All rights reserved.</span></span><br><span class="line"><span class="comment">//</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="comment">// GLEW</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> GLEW_STATIC</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;GL/glew.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="comment">// GLFW</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;GLFW/glfw3.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">framebuffer_size_callback</span><span class="params">(GLFWwindow* window, <span class="keyword">int</span> width, <span class="keyword">int</span> height)</span> </span>&#123;</span><br><span class="line">    <span class="built_in">glViewport</span>(<span class="number">0</span>, <span class="number">0</span>, width, height);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="built_in">glfwInit</span>();</span><br><span class="line"></span><br><span class="line">    <span class="built_in">glfwWindowHint</span>(GLFW_CONTEXT_VERSION_MAJOR, <span class="number">4</span>);</span><br><span class="line">    <span class="built_in">glfwWindowHint</span>(GLFW_CONTEXT_VERSION_MINOR, <span class="number">1</span>);</span><br><span class="line">    <span class="built_in">glfwWindowHint</span>(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);</span><br><span class="line">    <span class="built_in">glfwWindowHint</span>(GLFW_RESIZABLE, GL_FALSE);</span><br><span class="line">    <span class="built_in">glfwWindowHint</span>(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);  <span class="comment">// for Mac OS X</span></span><br><span class="line"></span><br><span class="line">    GLFWwindow* window = <span class="built_in">glfwCreateWindow</span>(<span class="number">800</span>, <span class="number">600</span>, <span class="string">&quot;OpenGLab&quot;</span>, <span class="literal">nullptr</span>, <span class="literal">nullptr</span>);</span><br><span class="line">    <span class="keyword">if</span> (window == <span class="literal">nullptr</span>) &#123;</span><br><span class="line">        std::cout &lt;&lt; <span class="string">&quot;Failed to create GLFW window&quot;</span> &lt;&lt; std::endl;</span><br><span class="line">        <span class="built_in">glfwTerminate</span>();</span><br><span class="line">        <span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">glfwMakeContextCurrent</span>(window);</span><br><span class="line"></span><br><span class="line">    glewExperimental = GL_TRUE;</span><br><span class="line">    <span class="keyword">if</span> (<span class="built_in">glewInit</span>() != GLEW_OK) &#123;</span><br><span class="line">        std::cout &lt;&lt; <span class="string">&quot;Failed to initialize GLEW&quot;</span> &lt;&lt; std::endl;</span><br><span class="line">        <span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="built_in">glfwSetFramebufferSizeCallback</span>(window, framebuffer_size_callback);  <span class="comment">// glfwGetFramebufferSize doesnt work</span></span><br><span class="line"></span><br><span class="line">    GLfloat vertices[] = &#123;</span><br><span class="line">        <span class="number">-0.5f</span>, <span class="number">-0.5f</span>, <span class="number">0.0f</span>,</span><br><span class="line">         <span class="number">0.5f</span>, <span class="number">-0.5f</span>, <span class="number">0.0f</span>,</span><br><span class="line">         <span class="number">0.0f</span>,  <span class="number">0.5f</span>, <span class="number">0.0f</span></span><br><span class="line">    &#125;;</span><br><span class="line"><span class="comment">//VBO</span></span><br><span class="line">    GLuint VBO;</span><br><span class="line">    <span class="built_in">glGenBuffers</span>(<span class="number">1</span>, &amp;VBO);</span><br><span class="line">    <span class="built_in">glBindBuffer</span>(GL_ARRAY_BUFFER, VBO);</span><br><span class="line">    <span class="built_in">glBufferData</span>(GL_ARRAY_BUFFER, <span class="built_in"><span class="keyword">sizeof</span></span>(vertices), vertices, GL_STATIC_DRAW);</span><br><span class="line"></span><br><span class="line">    <span class="comment">// Vertex Shader</span></span><br><span class="line">    <span class="keyword">char</span>* vertexShaderSource = <span class="string">&quot;#version 330 core\n\nlayout (location = 0) in vec3 position;\n\nvoid main()\n&#123;\n\tgl_Position = vec4(position.x, position.y, position.z, 1.0);\n&#125;&quot;</span>;</span><br><span class="line"><span class="comment">//vertexShader</span></span><br><span class="line">    GLuint vertexShader;</span><br><span class="line">    vertexShader = <span class="built_in">glCreateShader</span>(GL_VERTEX_SHADER);</span><br><span class="line">    <span class="built_in">glShaderSource</span>(vertexShader, <span class="number">1</span>, &amp;vertexShaderSource, <span class="literal">NULL</span>);</span><br><span class="line">    <span class="built_in">glCompileShader</span>(vertexShader);</span><br><span class="line"></span><br><span class="line">    GLint success;</span><br><span class="line">    GLchar infoLog[<span class="number">512</span>];</span><br><span class="line">    <span class="built_in">glGetShaderiv</span>(vertexShader, GL_COMPILE_STATUS, &amp;success);</span><br><span class="line">    <span class="keyword">if</span>(!success) &#123;</span><br><span class="line">        <span class="built_in">glGetShaderInfoLog</span>(vertexShader, <span class="number">512</span>, <span class="literal">NULL</span>, infoLog);</span><br><span class="line">        std::cout &lt;&lt; <span class="string">&quot;ERROR::SHADER::VERTEX::COMPILATION_FAILED\n&quot;</span> &lt;&lt; infoLog &lt;&lt; std::endl;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// Fragment Shader</span></span><br><span class="line"><span class="comment">//fragmentShader</span></span><br><span class="line">    <span class="keyword">char</span>* fragmentShaderSource = <span class="string">&quot;#version 330 core\n\nout vec4 color;\n\nvoid main()\n&#123;\n\tcolor = vec4(1.0f, 0.5f, 0.2f, 1.0f);\n&#125;&quot;</span>;</span><br><span class="line">    GLuint fragmentShader;</span><br><span class="line">    fragmentShader = <span class="built_in">glCreateShader</span>(GL_FRAGMENT_SHADER);</span><br><span class="line">    <span class="built_in">glShaderSource</span>(fragmentShader, <span class="number">1</span>, &amp;fragmentShaderSource, <span class="literal">NULL</span>);</span><br><span class="line">    <span class="built_in">glCompileShader</span>(fragmentShader);</span><br><span class="line"></span><br><span class="line">    <span class="built_in">glGetShaderiv</span>(fragmentShader, GL_COMPILE_STATUS, &amp;success);</span><br><span class="line">    <span class="keyword">if</span>(!success) &#123;</span><br><span class="line">        <span class="built_in">glGetShaderInfoLog</span>(fragmentShader, <span class="number">512</span>, <span class="literal">NULL</span>, infoLog);</span><br><span class="line">        std::cout &lt;&lt; <span class="string">&quot;ERROR::SHADER::FRAGMENT::COMPILATION_FAILED\n&quot;</span> &lt;&lt; infoLog &lt;&lt; std::endl;</span><br><span class="line">    &#125;</span><br><span class="line"><span class="comment">//shaderProgram</span></span><br><span class="line">    GLuint shaderProgram;</span><br><span class="line">    shaderProgram = <span class="built_in">glCreateProgram</span>();</span><br><span class="line"></span><br><span class="line">    <span class="built_in">glAttachShader</span>(shaderProgram, vertexShader);</span><br><span class="line">    <span class="built_in">glAttachShader</span>(shaderProgram, fragmentShader);</span><br><span class="line">    <span class="built_in">glLinkProgram</span>(shaderProgram);</span><br><span class="line"></span><br><span class="line">    <span class="built_in">glGetProgramiv</span>(shaderProgram, GL_LINK_STATUS, &amp;success);</span><br><span class="line">    <span class="keyword">if</span>(!success) &#123;</span><br><span class="line">        <span class="built_in">glGetProgramInfoLog</span>(shaderProgram, <span class="number">512</span>, <span class="literal">NULL</span>, infoLog);</span><br><span class="line">        std::cout &lt;&lt; <span class="string">&quot;ERROR::SHADER::PROGRAM::LINK_FAILED\n&quot;</span> &lt;&lt; infoLog &lt;&lt; std::endl;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">  </span><br><span class="line">  </span><br><span class="line">  </span><br><span class="line">  </span><br><span class="line"><span class="comment">//The End</span></span><br><span class="line">    <span class="built_in">glUseProgram</span>(shaderProgram);</span><br><span class="line"></span><br><span class="line">    <span class="built_in">glDeleteShader</span>(vertexShader);</span><br><span class="line">    <span class="built_in">glDeleteShader</span>(fragmentShader);</span><br><span class="line"></span><br><span class="line">  </span><br><span class="line">  </span><br><span class="line">  </span><br><span class="line">  </span><br><span class="line">  </span><br><span class="line">  </span><br><span class="line">  </span><br><span class="line">  </span><br><span class="line">  </span><br><span class="line">  </span><br><span class="line">  </span><br><span class="line">  </span><br><span class="line">  </span><br><span class="line">  </span><br><span class="line">  </span><br><span class="line">  </span><br><span class="line">  </span><br><span class="line">    <span class="built_in">glVertexAttribPointer</span>(<span class="number">0</span>, <span class="number">3</span>, GL_FLOAT, GL_FALSE, <span class="number">3</span> * <span class="built_in"><span class="keyword">sizeof</span></span>(GLfloat), (GLvoid*)<span class="number">0</span>);</span><br><span class="line">    <span class="built_in">glEnableVertexAttribArray</span>(<span class="number">0</span>);</span><br><span class="line"></span><br><span class="line">  </span><br><span class="line">  </span><br><span class="line">  </span><br><span class="line"></span><br><span class="line">    GLuint VAO;</span><br><span class="line">    <span class="built_in">glGenVertexArrays</span>(<span class="number">1</span>, &amp;VAO);</span><br><span class="line"></span><br><span class="line">    <span class="built_in">glBindVertexArray</span>(VAO);</span><br><span class="line">    <span class="built_in">glBindBuffer</span>(GL_ARRAY_BUFFER, VBO);</span><br><span class="line">    <span class="built_in">glBufferData</span>(GL_ARRAY_BUFFER, <span class="built_in"><span class="keyword">sizeof</span></span>(vertices), vertices, GL_STATIC_DRAW);</span><br><span class="line">    <span class="built_in">glVertexAttribPointer</span>(<span class="number">0</span>, <span class="number">3</span>, GL_FLOAT, GL_FALSE, <span class="number">3</span> * <span class="built_in"><span class="keyword">sizeof</span></span>(GLfloat), (GLvoid*)<span class="number">0</span>);</span><br><span class="line">    <span class="built_in">glEnableVertexAttribArray</span>(<span class="number">0</span>);</span><br><span class="line">    <span class="built_in">glBindVertexArray</span>(<span class="number">0</span>);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    std::cout &lt;&lt; <span class="string">&quot;OpenGL Vendor: &quot;</span> &lt;&lt; <span class="built_in">glGetString</span>(GL_VENDOR) &lt;&lt; std::endl;</span><br><span class="line">    std::cout &lt;&lt; <span class="string">&quot;OpenGL Renderer: &quot;</span> &lt;&lt; <span class="built_in">glGetString</span>(GL_RENDERER) &lt;&lt; std::endl;</span><br><span class="line">    std::cout &lt;&lt; <span class="string">&quot;OpenGL Version: &quot;</span> &lt;&lt; <span class="built_in">glGetString</span>(GL_VERSION) &lt;&lt; std::endl;</span><br><span class="line">    std::cout &lt;&lt; <span class="string">&quot;GLFW library version: &quot;</span> &lt;&lt; <span class="built_in">glfwGetVersionString</span>() &lt;&lt; std::endl;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="keyword">while</span> (!<span class="built_in">glfwWindowShouldClose</span>(window)) &#123;</span><br><span class="line">        <span class="built_in">glfwPollEvents</span>();</span><br><span class="line"></span><br><span class="line">        <span class="built_in">glClearColor</span>(<span class="number">0.2f</span>, <span class="number">0.3f</span>, <span class="number">0.3f</span>, <span class="number">1.0f</span>);</span><br><span class="line">        <span class="built_in">glClear</span>(GL_COLOR_BUFFER_BIT);</span><br><span class="line"></span><br><span class="line">        <span class="built_in">glUseProgram</span>(shaderProgram);</span><br><span class="line">        <span class="built_in">glBindVertexArray</span>(VAO);</span><br><span class="line">        <span class="built_in">glDrawArrays</span>(GL_TRIANGLES, <span class="number">0</span>, <span class="number">3</span>);</span><br><span class="line">        <span class="built_in">glBindVertexArray</span>(<span class="number">0</span>);</span><br><span class="line"></span><br><span class="line">        <span class="built_in">glfwSwapBuffers</span>(window);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="built_in">glfwTerminate</span>();</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//来自https://blog.csdn.net/HiyoungTsui/article/details/79475415</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>在学习计算机各个具体模版的使用时，我领悟了某种神奇的学习方法：</p>
+<p>在tutorial一股脑塞给你一组全新的概念时既不要像文科一样死记硬背，也不要像理科一样试图彻底的理解，因为cs中的许多概念其名字与其具体用法是息息相关的，在不了解作用时就尝试完全理解只能导向错误理解或是畏难情绪。</p>
+<p>以下是我自己发明的concept-tree方法：</p>
+<p>先把概念用纸笔记下来，然后把它贴在一边，接下来一边学习（在脑中丰富概念树的内容），一边回忆概念树上各概念之间的联系。</p>
+<p>以下是概念树：</p>
+<h1 id="缓冲对象类型"><a href="#缓冲对象类型" class="headerlink" title="缓冲对象类型"></a>缓冲对象类型</h1><h1 id="着色器"><a href="#着色器" class="headerlink" title="着色器"></a>着色器</h1><h2 id="着色器的创建"><a href="#着色器的创建" class="headerlink" title="着色器的创建"></a>着色器的创建</h2><h2 id="着色器的组合"><a href="#着色器的组合" class="headerlink" title="着色器的组合"></a>着色器的组合</h2><h1 id="索引缓冲对象"><a href="#索引缓冲对象" class="headerlink" title="索引缓冲对象"></a>索引缓冲对象</h1>
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2021/04/17/tmux-for-mac-install/" rel="prev" title="tmux_for_mac_install">
+                  <i class="fa fa-chevron-left"></i> tmux_for_mac_install
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+    <div class="comments gitalk-container"></div><script src="/js/comments.js"></script>
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">1642264706@qq.com</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/muse/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+<script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script>
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1.7.2/dist/gitalk.css">
+
+<script>
+NexT.utils.loadComments('.gitalk-container', () => {
+  NexT.utils.getScript('https://cdn.jsdelivr.net/npm/gitalk@1.7.2/dist/gitalk.min.js', () => {
+    var gitalk = new Gitalk({
+      clientID    : '9c021c5da0bed6b2f2d2',
+      clientSecret: '7d1eea834ad820fb3308c12939c21636985cb596',
+      repo        : 'comment',
+      owner       : 'LBLK',
+      admin       : ['LBLK'],
+      id          : '7dca87d120af1769b24c4e02649c0f80',
+      proxy       : 'https://cors-anywhere.herokuapp.com/https://github.com/login/oauth/access_token',
+        language: 'zh-CN',
+      distractionFreeMode: true
+    });
+    gitalk.render(document.querySelector('.gitalk-container'));
+  }, window.Gitalk);
+});
+</script>
+
+</body>
+</html>
