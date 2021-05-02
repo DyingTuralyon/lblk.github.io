@@ -12,7 +12,9 @@ ctrl + ,        :打开设置界面
 
 # 第二步 修改
 
-在setting 最大一个大括号中添加：
+!!!PS:在setting 最大一个大括号中
+
+添加：
 
 ```json
 "latex-workshop.latex.tools": [
